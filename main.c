@@ -17,24 +17,6 @@ int buffindex=0,DFSM=1,position=-1,found,stringlength=0,sindex=0;
 
 
 
-void belongs_to_which_equivalence_state(const char *string)
-{
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -42,6 +24,7 @@ void belongs_to_which_equivalence_state(const char *string)
 int Verify_and_store_alphabet_position(const char *buffer, char target)
 {
 	//int position=-1;
+
 	for(int i=0;i<strlen(buffer);i++)
 	{
 		if(buffer[i]==target)
@@ -51,6 +34,24 @@ int Verify_and_store_alphabet_position(const char *buffer, char target)
 		}
 	}
 	return position;
+
+}
+
+
+int belongs_to_which_equivalence_state(const char *string)
+{
+    int DFSM=1;
+
+    int length=strlen(string);
+    for(int i=0;i<length;i++)
+    {
+        int position =Verify_and_store_alphabet_position(buffer[0],string[i]);
+        statenum=buffer[DFSM][position];
+        //covert character to integer and intialize to DFSM
+        DFSM=statenum-'0';
+
+    }
+    return DFSM;
 
 }
 
@@ -158,25 +159,9 @@ int main(int argc, char *argv[])
     printf("\nSindex=%d \n",sindex);
 
 
-
-
-
-
-    // Read the string from the second text file
-    fgets(string, sizeof(string), file2);
-    string[strcspn(string, "\n")] = '\0'; // Remove newline character
-    stringlength=strlen(string);
-
-
-
-
-
     // Close the first text file
     fclose(file2);
     
-    //accessing character
-    printf("string :%s  stringlength=%d\n\n", string,stringlength);
-
 	
     //check that the given transition is valid DFSM or Not
     int V=0;
@@ -268,7 +253,8 @@ int main(int argc, char *argv[])
 
     for(int i=0;i<sindex;i++)
     {
-        belongs_to_which_equivalence_state(sbuff[i]);
+        int finalstate=belongs_to_which_equivalence_state(sbuff[i]);
+        printf("%d \n",finalstate);
     }
 
 
