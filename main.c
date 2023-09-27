@@ -15,6 +15,29 @@ Description:
 char buffer[MAX][MAX],string[MAX],statenum,sbuff[MAX][MAX];
 int buffindex=0,DFSM=1,position=-1,found,stringlength=0,sindex=0;
 
+
+
+void belongs_to_which_equivalence_state(const char *string)
+{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //function to verify the alphabet is present and return the position for use of logic
 int Verify_and_store_alphabet_position(const char *buffer, char target)
 {
@@ -221,24 +244,40 @@ int main(int argc, char *argv[])
     }
 
 
-    //<<<<<<<<<<<<<<<<<<<<<<<<<<<<Actual logic >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    
 
 
-    // Create i text files
+    // Create text files
     for (int fileNumber = 1; fileNumber <= buffindex-2; fileNumber++) {
         char filename[50];
-        sprintf(filename, "group_%d.txt", fileNumber); // Create a filename like "group_1.txt", "group_2.txt", etc.
+        sprintf(filename, "group_%d.txt", fileNumber); 
         
-        // Attempt to create and open the file for writing
+        
         FILE *file = fopen(filename, "w");
 
         if (file == NULL) {
             printf("Failed to create %s\n", filename);
         } else {
             printf("%s created successfully\n", filename);
-            fclose(file); // Close the file when done
+            fclose(file); 
         }
     }
+
+
+    //<<<<<<<<<<<<<<<<<<<<<<<<<<<<Actual logic >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+    for(int i=0;i<sindex;i++)
+    {
+        belongs_to_which_equivalence_state(sbuff[i]);
+    }
+
+
+
+
+
+
+
+
 
 
 
