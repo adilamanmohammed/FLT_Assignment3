@@ -202,73 +202,37 @@ int main(int argc, char *argv[])
         }
     }
 
+    //check if all the list of string alphabets in given alphabet list 
+    for(int i=0;i<sindex;i++)
+    {
+        for(int j=0;j<strlen(sbuff[i]);j++)
+        {
+            if(strchr(buffer[0],sbuff[i][j]))
+            {
+                
+            }
+            else
+            {
+                printf("\nstring[%d][%d]:%c is not in alphabet list\n",i,j,sbuff[i][j]);
+                exit(0);
+            }
+        }
 
+    }
 
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<Actual logic >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-        //check if the given string alphabets are in DFSM alphabets
-	for(int i=0;i<stringlength;i++)
-	{
-		if(strchr(buffer[0],string[i]))
-		{
-			int temp=1;
-		}
-		else
-		{
-			printf("\n %c is not present in given DFSM specifications, the given String is NOT accepted by DFSM \n",string[i]);
-			exit(0);
-		}
-	}
 
 
-		//printf("\n all okay\n"); // debuging
-		//DFSM Logic
-        	for(int i=0;i<stringlength;i++)
-        		{
 
-            			char target = string[i];
+    
 
-            			int position = Verify_and_store_alphabet_position(buffer[0], target);
-
-            			if (position != -1) {
-
-                			//accessing the postion of alphabet
-                			//printf("%c is present in Buffer[0] at position %d\n", target, position);
-
-                			//DFSM
-                			statenum=buffer[DFSM][position];
-                			//covert character to integer and intialize to DFSM
-                			DFSM=statenum-'0';
-                			//printf("DFSM=%d\n",DFSM);
-
-
-            			} 
-            			else 
-            			{
-                			printf("\nNO \n");
-            			}
-
-        	}
 		
-		//Debugging and checking the values of finalstates, Present state, last state of DFSM after taking string as input
-        	//printf("\n finatstates=%s  statenum=%c DFSM=%d\n",buffer[buffindex-1],statenum,DFSM);
+		
 
-        	if(strchr(buffer[buffindex-1],statenum))
-        	{
-            	printf("\nYES \n");
-        	}
-        	else
-		{
-            	printf("\nNO \n");
-        	}
-
-    	}
-    	else
-	{
-        	printf("\n NO \n ");
-    	}
-
+    }
+    	
 
 //end of first else 
 	}
