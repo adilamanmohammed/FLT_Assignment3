@@ -224,9 +224,26 @@ int main(int argc, char *argv[])
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<Actual logic >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
+    // Create i text files
+    for (int fileNumber = 1; fileNumber <= buffindex-2; fileNumber++) {
+        char filename[50];
+        sprintf(filename, "group_%d.txt", fileNumber); // Create a filename like "group_1.txt", "group_2.txt", etc.
+        
+        // Attempt to create and open the file for writing
+        FILE *file = fopen(filename, "w");
+
+        if (file == NULL) {
+            printf("Failed to create %s\n", filename);
+        } else {
+            printf("%s created successfully\n", filename);
+            fclose(file); // Close the file when done
+        }
+    }
 
 
-    
+
+
+
 
 		
 		
