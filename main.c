@@ -1,104 +1,245 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+/*
+Name : Adil Aman Mohammed
+Course : Formal language theory
+Assignment no: 3
+CWID : A20395630
+Description: 
+*/
 
-#define MAX_ALPHABET_SIZE 26
-#define MAX_STATES 100
 
-// Function to read the DFSM specification from a file
-void readDFSMSpecification(FILE *file, char alphabet[], int transition_table[][MAX_ALPHABET_SIZE], int *num_states, int final_states[], int *num_final_states) {
-    // Read the input alphabet
-    fscanf(file, "%s", alphabet);
-    int alphabet_size = strlen(alphabet);
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 
-    // Read the number of states
-    fscanf(file, "%d", num_states);
+#define MAX 1000
+char buffer[MAX][MAX],string[MAX],statenum;
+int buffindex=0,DFSM=1,position=-1,found,stringlength=0;
 
-    // Read the transition table
-    for (int i = 0; i < *num_states; i++) {
-        for (int j = 0; j < alphabet_size; j++) {
-            fscanf(file, "%d", &transition_table[i][j]);
-        }
-    }
+//function to verify the alphabet is present and return the position for use of logic
+int Verify_and_store_alphabet_position(const char *buffer, char target)
+{
+	//int position=-1;
+	for(int i=0;i<strlen(buffer);i++)
+	{
+		if(buffer[i]==target)
+		{
+			position=i;
+			break; //Searching Stopped once the position is found
+		}
+	}
+	return position;
 
-    // Read the number of final states
-    fscanf(file, "%d", num_final_states);
-
-    // Read the final states
-    for (int i = 0; i < *num_final_states; i++) {
-        fscanf(file, "%d", &final_states[i]);
-    }
 }
 
-// Function to classify strings into equivalence classes
-void classifyStrings(FILE *inputFile, FILE *outputFiles[], char alphabet[], int transition_table[][MAX_ALPHABET_SIZE], int num_states, int final_states[], int num_final_states) {
-    char buffer[256]; // Adjust buffer size as needed
-    int class_index = 1;
 
-    // Initialize output files
-    for (int i = 0; i < num_final_states; i++) {
-        char filename[20];
-        sprintf(filename, "group_%d.txt", i + 1);
-        outputFiles[i] = fopen(filename, "w");
+//main function
+int main(int argc, char *argv[])
+{
+	//verifying the command line argument
+    if(argc!=3)
+    {
+        printf("The given no.of arguments are incorrect please check your arguments in command line:\n");
     }
+    else
+    {
 
-    // Read and classify strings
-    while (fgets(buffer, sizeof(buffer), inputFile)) {
-        int current_state = 1; // Start state
-        int i = 0;
+    //printf("%s\t%s\n",argv[1],argv[2]); //printing the input files names
 
-        while (buffer[i] != '\0' && buffer[i] != '\n') {
-            char symbol = buffer[i++];
-            int symbol_index = strchr(alphabet, symbol) - alphabet;
 
-            if (symbol_index >= 0 && symbol_index < strlen(alphabet)) {
-                current_state = transition_table[current_state - 1][symbol_index];
-            }
-        }
-
-        // Write the string to the appropriate output file
-        for (int j = 0; j < num_final_states; j++) {
-            if (current_state == final_states[j]) {
-                fprintf(outputFiles[j], "%s", buffer);
-                break;
-            }
-        }
-    }
-
-    // Close output files
-    for (int i = 0; i < num_final_states; i++) {
-        fclose(outputFiles[i]);
-    }
-}
-
-int main(int argc, char *argv[]) {
-    if (argc != 3) {
-        printf("Usage: %s <DFSM specification file> <input strings file>\n", argv[0]);
+    //open the 1nd file DFSM.txt
+    FILE *file1 = fopen(argv[1], "r");
+    if (file1 == NULL) 
+    {
+        perror("Check with string.txt Error opening the file");
         return 1;
     }
 
-    FILE *specFile = fopen(argv[1], "r");
-    FILE *inputFile = fopen(argv[2], "r");
+    
 
-    if (specFile == NULL || inputFile == NULL) {
-        printf("Error: Unable to open files.\n");
+    //Read lines and store non-empty lines (excluding lines with only spaces)
+    while (fgets(buffer[buffindex], MAX, file1)) {
+        int length = strlen(buffer[buffindex]);
+
+        // Remove spaces from the line and store only non-space characters
+        int newLength = 0;
+        for (int i = 0; i < length; i++) {
+            if (buffer[buffindex][i] != ' ' && buffer[buffindex][i] != '\n') {
+                buffer[buffindex][newLength] = buffer[buffindex][i];
+                newLength++;
+            }
+        }
+        buffer[buffindex][newLength] = '\0'; // Null-terminate the modified line
+
+        if (newLength > 0) {
+            buffindex++;
+        }
+    }
+    
+    //Closing file 1
+    fclose(file1);
+
+    //printing the buffer index
+    printf("bufferindex:%d\n\n",buffindex);
+
+
+    //printing the stored non-empty lines
+    for (int i = 0; i < buffindex; i++) {
+       printf("buffer[%d]: %s\n", i, buffer[i]);
+    }
+
+    //aphalet Length defining
+    int alphalength=strlen(buffer[0]);
+    printf("alphalength:%d\n",alphalength);
+
+
+    //accessing the buffer
+    //printf("\nseparate :%c\n",buffer[2][0]);
+
+ 
+    int finalstatelength= strlen(buffer[buffindex-1]);
+
+    //printf("final state: %s\t FSlength :%d FSarrayIndex:%d\n ",buffer[buffindex-1],finalstatelength,buffindex-1);
+
+
+	
+    // Open the second text file string.txt for reading
+    FILE *file2 = fopen(argv[2], "r");
+    if (file2 == NULL) 
+    {
+        perror("Check with string.txt Error opening the file");
         return 1;
     }
 
-    char alphabet[MAX_ALPHABET_SIZE];
-    int transition_table[MAX_STATES][MAX_ALPHABET_SIZE];
-    int num_states;
-    int final_states[MAX_STATES];
-    int num_final_states;
+    // Read the string from the second text file
+    fgets(string, sizeof(string), file2);
+    string[strcspn(string, "\n")] = '\0'; // Remove newline character
+    stringlength=strlen(string);
 
-    readDFSMSpecification(specFile, alphabet, transition_table, &num_states, final_states, &num_final_states);
+    // Close the first text file
+    fclose(file2);
+    
+    //accessing character
+    printf("string :%s  stringlength=%d\n\n", string,stringlength);
 
-    FILE *outputFiles[num_final_states];
-    classifyStrings(inputFile, outputFiles, alphabet, transition_table, num_states, final_states, num_final_states);
+	
+    //check that the given transition is valid DFSM or Not
+    int V=0;
+    for(int j=1;j<=alphalength;j++)
+    {
+        if(strlen(buffer[j])==alphalength)
+        {
+            //printf("buffer[%d]:%ld=alphalength:%d\n",j,strlen(buffer[j]),alphalength);
+            V=0;
+        }
+        else{
+            printf("transition is not valid state:%d length:%ld\n",j,strlen(buffer[j]));
+	    printf("NO\n\n");
+            V=1;
+            exit(0); //can use exit(1);
+        }
+    }
+	
+    //printf("V=%d\n",V); //V is a flag to indicate that the given transition is invalid	
 
-    // Close input files
-    fclose(specFile);
-    fclose(inputFile);
 
-    return 0;
+
+    //<<<<<<<<<<<<<<<<<<<<<<<<<<<<DFSM Logic>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+	if(stringlength==0)
+	{
+		printf("\nstring.txt is empty\n");
+	}
+	else if(buffindex==0)
+	{
+		printf("\nDFSM.txt is empty\n");
+	}
+	else if(V!=1)
+	{
+
+        //check if all the transitions are valid transition
+    for(int i=1;i<buffindex-1;i++)
+    {
+        for(int j=0;j<alphalength;j++)
+        {
+            if (buffer[i][j] >= '0' + buffindex-1)
+            {
+                printf("error %c is not a valid state transition DFSM is invalid",buffer[i][j]);
+                exit(0);
+            }
+        }
+    }
+
+
+
+
+
+
+        //check if the given string alphabets are in DFSM alphabets
+	for(int i=0;i<stringlength;i++)
+	{
+		if(strchr(buffer[0],string[i]))
+		{
+			int temp=1;
+		}
+		else
+		{
+			printf("\n %c is not present in given DFSM specifications, the given String is NOT accepted by DFSM \n",string[i]);
+			exit(0);
+		}
+	}
+
+
+		//printf("\n all okay\n"); // debuging
+		//DFSM Logic
+        	for(int i=0;i<stringlength;i++)
+        		{
+
+            			char target = string[i];
+
+            			int position = Verify_and_store_alphabet_position(buffer[0], target);
+
+            			if (position != -1) {
+
+                			//accessing the postion of alphabet
+                			//printf("%c is present in Buffer[0] at position %d\n", target, position);
+
+                			//DFSM
+                			statenum=buffer[DFSM][position];
+                			//covert character to integer and intialize to DFSM
+                			DFSM=statenum-'0';
+                			//printf("DFSM=%d\n",DFSM);
+
+
+            			} 
+            			else 
+            			{
+                			printf("\nNO \n");
+            			}
+
+        	}
+		
+		//Debugging and checking the values of finalstates, Present state, last state of DFSM after taking string as input
+        	//printf("\n finatstates=%s  statenum=%c DFSM=%d\n",buffer[buffindex-1],statenum,DFSM);
+
+        	if(strchr(buffer[buffindex-1],statenum))
+        	{
+            	printf("\nYES \n");
+        	}
+        	else
+		{
+            	printf("\nNO \n");
+        	}
+
+    	}
+    	else
+	{
+        	printf("\n NO \n ");
+    	}
+
+
+//end of first else 
+	}
+	return 0;
 }
+
+
