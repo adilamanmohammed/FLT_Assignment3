@@ -3,7 +3,7 @@ Name : Adil Aman Mohammed
 Course : Formal language theory
 Assignment no: 3
 CWID : A20395630
-Description: 
+Description:
 */
 
 
@@ -12,8 +12,8 @@ Description:
 #include<string.h>
 
 #define MAX 1000
-char buffer[MAX][MAX],string[MAX],statenum;
-int buffindex=0,DFSM=1,position=-1,found,stringlength=0;
+char buffer[MAX][MAX],string[MAX],statenum,sbuff[MAX][MAX];
+int buffindex=0,DFSM=1,position=-1,found,stringlength=0,sindex=0;
 
 //function to verify the alphabet is present and return the position for use of logic
 int Verify_and_store_alphabet_position(const char *buffer, char target)
@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
 
     //aphalet Length defining
     int alphalength=strlen(buffer[0]);
-    printf("alphalength:%d\n",alphalength);
+    printf("alphalength:%d\n\n",alphalength);
 
 
     //accessing the buffer
@@ -110,10 +110,43 @@ int main(int argc, char *argv[])
         return 1;
     }
 
+    //store list of strings
+    while (fgets(sbuff[sindex], MAX, file2)) {
+        int length = strlen(sbuff[sindex]);
+
+        // Remove spaces from the line and store only non-space characters
+        int newLength = 0;
+        for (int i = 0; i < length; i++) {
+            if (sbuff[sindex][i] != ' ' && sbuff[sindex][i] != '\n') {
+                sbuff[sindex][newLength] = sbuff[sindex][i];
+                newLength++;
+            }
+        }
+        sbuff[sindex][newLength] = '\0'; // Null-terminate the modified line
+
+        if (newLength > 0) {
+            sindex++;
+        }
+    }
+
+    for (int i = 0; i < sindex; i++) {
+       printf("sbuff[%d]: %s\n", i, sbuff[i]);
+    }
+    printf("\nSindex=%d \n",sindex);
+
+
+
+
+
+
     // Read the string from the second text file
     fgets(string, sizeof(string), file2);
     string[strcspn(string, "\n")] = '\0'; // Remove newline character
     stringlength=strlen(string);
+
+
+
+
 
     // Close the first text file
     fclose(file2);
@@ -145,7 +178,7 @@ int main(int argc, char *argv[])
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<DFSM Logic>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-	if(stringlength==0)
+	if(sindex==0)
 	{
 		printf("\nstring.txt is empty\n");
 	}
@@ -172,7 +205,7 @@ int main(int argc, char *argv[])
 
 
 
-
+    //<<<<<<<<<<<<<<<<<<<<<<<<<<<<Actual logic >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
         //check if the given string alphabets are in DFSM alphabets
 	for(int i=0;i<stringlength;i++)
@@ -241,3 +274,5 @@ int main(int argc, char *argv[])
 	}
 	return 0;
 }
+
+
