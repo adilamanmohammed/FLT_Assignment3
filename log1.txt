@@ -1,0 +1,388 @@
+Script started on 2023-09-27 02:39:57+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="218" LINES="15"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run 
+hello[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run gcc main.c -o run[Kn
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [K
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+string :abb  stringlength=3
+
+
+YES 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+string :abb  stringlength=3
+
+
+YES 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: aba
+
+Sindex=3 
+string :  stringlength=0
+
+
+YES 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: aba
+
+Sindex=3 
+string :  stringlength=0
+
+a b b 
+b b 
+a b a 
+
+YES 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:215:42:[m[K [01;31m[Kerror: [m[Ksubscripted value is neither array nor pointer nor vector
+  215 |             if(strchr(buffer[0],string[i][01;31m[K[[m[Kj]))
+      |                                          [01;31m[K^[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: aba
+
+Sindex=3 
+string :  stringlength=0
+
+ok a ok b ok b 
+ok b ok b 
+ok a ok b ok a 
+
+YES 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: abac
+
+Sindex=3 
+string :  stringlength=0
+
+ok a ok b ok b 
+ok b ok b 
+ok a ok b ok a not okc 
+
+YES 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:222:35:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects a matching ‘[01m[Kint[m[K’ argument [[01;35m[K-Wformat=[m[K]
+  222 |                 printf("\nstring[[01;35m[K%d[m[K][%d]:%c is not in alphabet list");
+      |                                  [01;35m[K~^[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kint[m[K
+[01m[Kmain.c:222:39:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects a matching ‘[01m[Kint[m[K’ argument [[01;35m[K-Wformat=[m[K]
+  222 |                 printf("\nstring[%d][[01;35m[K%d[m[K]:%c is not in alphabet list");
+      |                                      [01;35m[K~^[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kint[m[K
+[01m[Kmain.c:222:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%c[m[K’ expects a matching ‘[01m[Kint[m[K’ argument [[01;35m[K-Wformat=[m[K]
+  222 |                 printf("\nstring[%d][%d]:[01;35m[K%c[m[K is not in alphabet list");
+      |                                          [01;35m[K~^[m[K
+      |                                           [01;35m[K|[m[K
+      |                                           [01;35m[Kint[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: abac
+
+Sindex=3 
+string :  stringlength=0
+
+ok a ok b ok b 
+ok b ok b 
+ok a ok b ok a 
+string[2][3]:c is not in alphabet list[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: abac
+
+Sindex=3 
+string :  stringlength=0
+
+a b b 
+b b 
+a b a 
+string[2][3]:c is not in alphabet list[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: abac
+
+Sindex=3 
+string :  stringlength=0
+
+
+
+
+string[2][3]:c is not in alphabet list[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: abac
+
+Sindex=3 
+string :  stringlength=0
+
+
+
+string[2][3]:c is not in alphabet list[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: abac
+
+Sindex=3 
+string :  stringlength=0
+
+
+string[2][3]:c is not in alphabet list[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: abac
+
+Sindex=3 
+string :  stringlength=0
+
+
+string[2][3]:c is not in alphabet list[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: abac
+
+Sindex=3 
+string :  stringlength=0
+
+
+string[2][3]:c is not in alphabet list
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: aba
+
+Sindex=3 
+string :  stringlength=0
+
+
+YES 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: aba
+
+Sindex=3 
+string :  stringlength=0
+
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: aba
+
+Sindex=3 
+string :  stringlength=0
+
+group_1.txt created successfully
+group_2.txt created successfully
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run./run DFSM.txt string.txt
+bufferindex:6
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 12
+buffer[4]: 12
+buffer[5]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: aba
+
+Sindex=3 
+string :  stringlength=0
+
+group_1.txt created successfully
+group_2.txt created successfully
+group_3.txt created successfully
+group_4.txt created successfully
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: aba
+
+Sindex=3 
+string :  stringlength=0
+
+group_1.txt created successfully
+group_2.txt created successfully
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:4
+
+buffer[0]: ab
+buffer[1]: 12
+buffer[2]: 12
+buffer[3]: 2
+alphalength:2
+
+sbuff[0]: abb
+sbuff[1]: bb
+sbuff[2]: aba
+
+Sindex=3 
+string :  stringlength=0
+
+group_1.txt created successfully
+group_2.txt created successfully
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ exit
+
+Script done on 2023-09-27 03:31:00+00:00 [COMMAND_EXIT_CODE="0"]
