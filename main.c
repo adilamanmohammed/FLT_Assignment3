@@ -55,6 +55,25 @@ int belongs_to_which_equivalence_state(const char *string)
 
 }
 
+void save_into_group(const char *string, char groupnum)
+{
+    char filename[1000];  // Adjust the size according to your needs
+    sprintf(filename, "group_%d.txt", groupnum);
+
+    FILE *file = fopen(filename, "a");
+    if (file == NULL) {
+        printf("Error opening file: %s\n", filename);
+        return;
+    }
+
+    fprintf(file, "%s\n", string);
+    fclose(file);
+}
+
+
+
+
+
 
 //main function
 int main(int argc, char *argv[])
@@ -253,8 +272,10 @@ int main(int argc, char *argv[])
 
     for(int i=0;i<sindex;i++)
     {
-        int finalstate=belongs_to_which_equivalence_state(sbuff[i]);
-        printf("%d \n",finalstate);
+        int class_state=belongs_to_which_equivalence_state(sbuff[i]);
+        printf("%d \n", class_state);
+        save_into_group(sbuff[i],class_state);
+
     }
 
 
