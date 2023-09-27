@@ -16,10 +16,6 @@ char buffer[MAX][MAX],string[MAX],statenum,sbuff[MAX][MAX];
 int buffindex=0,DFSM=1,position=-1,found,stringlength=0,sindex=0;
 
 
-
-
-
-
 //function to verify the alphabet is present and return the position for use of logic
 int Verify_and_store_alphabet_position(const char *buffer, char target)
 {
@@ -122,17 +118,17 @@ int main(int argc, char *argv[])
     fclose(file1);
 
     //printing the buffer index
-    printf("bufferindex:%d\n\n",buffindex);
+    //printf("bufferindex:%d\n\n",buffindex);
 
 
     //printing the stored non-empty lines
-    for (int i = 0; i < buffindex; i++) {
+    /*for (int i = 0; i < buffindex; i++) {
        printf("buffer[%d]: %s\n", i, buffer[i]);
-    }
+    }*/
 
     //aphalet Length defining
     int alphalength=strlen(buffer[0]);
-    printf("alphalength:%d\n\n",alphalength);
+    //printf("alphalength:%d\n\n",alphalength);
 
 
     //accessing the buffer
@@ -172,10 +168,10 @@ int main(int argc, char *argv[])
         }
     }
 
-    for (int i = 0; i < sindex; i++) {
+    /*for (int i = 0; i < sindex; i++) {
        printf("sbuff[%d]: %s\n", i, sbuff[i]);
-    }
-    printf("\nSindex=%d \n",sindex);
+    }*/
+    //printf("\nSindex=%d \n",sindex);
 
 
     // Close the first text file
@@ -262,7 +258,7 @@ int main(int argc, char *argv[])
         if (file == NULL) {
             printf("Failed to create %s\n", filename);
         } else {
-            printf("%s created successfully\n", filename);
+            //printf("%s created successfully\n", filename);
             fclose(file); 
         }
     }
@@ -273,25 +269,12 @@ int main(int argc, char *argv[])
     for(int i=0;i<sindex;i++)
     {
         int class_state=belongs_to_which_equivalence_state(sbuff[i]);
-        printf("%d \n", class_state);
+        //printf("%d \n", class_state);
         save_into_group(sbuff[i],class_state);
 
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-		
 		
 
     }
