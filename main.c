@@ -118,13 +118,13 @@ int main(int argc, char *argv[])
     fclose(file1);
 
     //printing the buffer index
-    //printf("bufferindex:%d\n\n",buffindex);
+    printf("bufferindex:%d\n\n",buffindex);
 
 
     //printing the stored non-empty lines
-    /*for (int i = 0; i < buffindex; i++) {
+    for (int i = 0; i < buffindex; i++) {
        printf("buffer[%d]: %s\n", i, buffer[i]);
-    }*/
+    }
 
     //aphalet Length defining
     int alphalength=strlen(buffer[0]);
@@ -188,7 +188,7 @@ int main(int argc, char *argv[])
             V=0;
         }
         else{
-            printf("transition is not valid state:%d length:%ld\n",j,strlen(buffer[j]));
+            printf("transition is not valid \n");
 	    printf("NO\n\n");
             V=1;
             exit(0); //can use exit(1);
@@ -243,9 +243,16 @@ int main(int argc, char *argv[])
 
     }
 
+    //check if given final states are valid for given DFSM
+    for(int i=0;i<strlen(buffer[buffindex-1]);i++)
+    {
+        if(buffer[buffindex-1][i] > '0'+buffindex-2 && buffer[buffindex-1][i]!='0')
+        {
+            printf("DFSM invalid\n");
+            exit(0);
+        }
 
-    
-
+    }
 
     // Create text files
     for (int fileNumber = 1; fileNumber <= buffindex-2; fileNumber++) {
