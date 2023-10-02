@@ -1,0 +1,1271 @@
+Script started on 2023-10-02 15:22:48+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="159" LINES="10"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ls
+DFSM.txt  log1.txt  log2.txt  log3.txt  log4.txt  log5.txt  main.c  [0m[01;32mrun[0m  [01;32msam[0m  sample.c  string.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc main.c -o run[C
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:406:37:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+  406 |         if(strlen([01;35m[Knewclasses[scount]==0[m[K))
+      |                   [01;35m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+      |                                     [01;35m[K|[m[K
+      |                                     [01;35m[Kint[m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kint[m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:406:12:[m[K [01;35m[Kwarning: [m[Knull argument where non-null required (argument 1) [[01;35m[K-Wnonnull[m[K]
+  406 |         if([01;35m[Kstrlen[m[K(newclasses[scount]==0))
+      |            [01;35m[K^~~~~~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ls
+DFSM.txt  log1.txt  log2.txt  log3.txt  log4.txt  log5.txt  main.c  [0m[01;32mrun[0m  [01;32msam[0m  sample.c  string.txt
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./lscleargcc main.c -o run [8@./run DFSM.txt string.txt[C
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+newclasses[0]: 1
+newclasses[1]: 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt ls[Kcleargcc main.c -o run 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run [8@./run DFSM.txt string.txt[C
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+newclasses[0]: 1
+newclasses[1]: 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc main.c -o run[C
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run [8@./run DFSM.txt string.txt[C
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+Segmentation fault (core dumped)
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc main.c -o run[C
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run [8@./run DFSM.txt string.txt[C
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+newclasses[0]: 135
+newclasses[1]: 
+newclasses[2]: 
+newclasses[3]: 
+newclasses[4]: 
+newclasses[5]: 
+newclasses[6]: 
+newclasses[7]: 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc main.c -o run[C
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run [8@./run DFSM.txt string.txt[C[8Pgcc main.c -o run[C[8@./run DFSM.txt string.txt[C[8Pgcc main.c -o run[C
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run [8@./run DFSM.txt string.txt[C
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+newclasses[0]: 1351
+newclasses[1]: 
+newclasses[2]: 
+newclasses[3]: 
+newclasses[4]: 
+newclasses[5]: 
+newclasses[6]: 
+newclasses[7]: 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc main.c -o run[C
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run [8@./run DFSM.txt string.txt[C
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+skip@3
+skip@5
+newclasses[0]: 1351
+newclasses[1]: 
+newclasses[2]: 
+newclasses[3]: 
+newclasses[4]: 
+newclasses[5]: 
+newclasses[6]: 
+newclasses[7]: 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc main.c -o run[C
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:455:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kfor[m[K’
+  455 |     [01;31m[Kfor[m[K (int i = 0; i <numCols; i++) {
+      |     [01;31m[K^~~[m[K
+[01m[Kmain.c:455:21:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+  455 |     for (int i = 0; [01;31m[Ki[m[K <numCols; i++) {
+      |                     [01;31m[K^[m[K
+[01m[Kmain.c:455:21:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:455:36:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  455 |     for (int i = 0; i <numCols; i++[01;31m[K)[m[K {
+      |                                    [01;31m[K^[m[K
+      |                                    [32m[K;[m[K
+[01m[Kmain.c:455:36:[m[K [01;31m[Kerror: [m[Kexpected statement before ‘[01m[K)[m[K’ token
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run [8@./run DFSM.txt string.txt[C
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+skip@3
+skip@5
+newclasses[0]: 1351
+newclasses[1]: 
+newclasses[2]: 
+newclasses[3]: 
+newclasses[4]: 
+newclasses[5]: 
+newclasses[6]: 
+newclasses[7]: 
+newclasses[8]: 
+newclasses[9]: 
+newclasses[10]: 
+newclasses[11]: 
+newclasses[12]: 
+newclasses[13]: 
+newclasses[14]: 
+newclasses[15]: 
+newclasses[16]: 
+newclasses[17]: 
+newclasses[18]: 
+newclasses[19]: 
+newclasses[20]: 
+newclasses[21]: 
+newclasses[22]: 
+newclasses[23]: 
+newclasses[24]: 
+newclasses[25]: 
+newclasses[26]: 
+newclasses[27]: 
+newclasses[28]: 
+newclasses[29]: 
+newclasses[30]: 
+newclasses[31]: 
+newclasses[32]: 
+newclasses[33]: 
+newclasses[34]: 
+newclasses[35]: 
+newclasses[36]: 
+newclasses[37]: 
+newclasses[38]: 
+newclasses[39]: 
+newclasses[40]: 
+newclasses[41]: 
+newclasses[42]: 
+newclasses[43]: 
+newclasses[44]: 
+newclasses[45]: 
+newclasses[46]: 
+newclasses[47]: 
+newclasses[48]: 
+newclasses[49]: 
+newclasses[50]: 
+newclasses[51]: 
+newclasses[52]: 
+newclasses[53]: 
+newclasses[54]: 
+newclasses[55]: 
+newclasses[56]: 
+newclasses[57]: 
+newclasses[58]: 
+newclasses[59]: 
+newclasses[60]: 
+newclasses[61]: 
+newclasses[62]: 
+newclasses[63]: 
+newclasses[64]: 
+newclasses[65]: 
+newclasses[66]: 
+newclasses[67]: 
+newclasses[68]: 
+newclasses[69]: 
+newclasses[70]: 
+newclasses[71]: 
+newclasses[72]: 
+newclasses[73]: 
+newclasses[74]: 
+newclasses[75]: 
+newclasses[76]: 
+newclasses[77]: 
+newclasses[78]: 
+newclasses[79]: 
+newclasses[80]: 
+newclasses[81]: 
+newclasses[82]: 
+newclasses[83]: 
+newclasses[84]: 
+newclasses[85]: 
+newclasses[86]: 
+newclasses[87]: 
+newclasses[88]: 
+newclasses[89]: 
+newclasses[90]: 
+newclasses[91]: 
+newclasses[92]: 
+newclasses[93]: 
+newclasses[94]: 
+newclasses[95]: 
+newclasses[96]: 
+newclasses[97]: 
+newclasses[98]: 
+newclasses[99]: 
+newclasses[100]: 
+newclasses[101]: 
+newclasses[102]: 
+newclasses[103]: 
+newclasses[104]: 
+newclasses[105]: 
+newclasses[106]: 
+newclasses[107]: 
+newclasses[108]: 
+newclasses[109]: 
+newclasses[110]: 
+newclasses[111]: 
+newclasses[112]: 
+newclasses[113]: 
+newclasses[114]: 
+newclasses[115]: 
+newclasses[116]: 
+newclasses[117]: 
+newclasses[118]: 
+newclasses[119]: 
+newclasses[120]: 
+newclasses[121]: 
+newclasses[122]: 
+newclasses[123]: 
+newclasses[124]: 
+newclasses[125]: 
+newclasses[126]: 
+newclasses[127]: 
+newclasses[128]: 
+newclasses[129]: 
+newclasses[130]: 
+newclasses[131]: 
+newclasses[132]: 
+newclasses[133]: 
+newclasses[134]: 
+newclasses[135]: 
+newclasses[136]: 
+newclasses[137]: 
+newclasses[138]: 
+newclasses[139]: 
+newclasses[140]: 
+newclasses[141]: 
+newclasses[142]: 
+newclasses[143]: 
+newclasses[144]: 
+newclasses[145]: 
+newclasses[146]: 
+newclasses[147]: 
+newclasses[148]: 
+newclasses[149]: 
+newclasses[150]: 
+newclasses[151]: 
+newclasses[152]: 
+newclasses[153]: 
+newclasses[154]: 
+newclasses[155]: 
+newclasses[156]: 
+newclasses[157]: 
+newclasses[158]: 
+newclasses[159]: 
+newclasses[160]: 
+newclasses[161]: 
+newclasses[162]: 
+newclasses[163]: 
+newclasses[164]: 
+newclasses[165]: 
+newclasses[166]: 
+newclasses[167]: 
+newclasses[168]: 
+newclasses[169]: 
+newclasses[170]: 
+newclasses[171]: 
+newclasses[172]: 
+newclasses[173]: 
+newclasses[174]: 
+newclasses[175]: 
+newclasses[176]: 
+newclasses[177]: 
+newclasses[178]: 
+newclasses[179]: 
+newclasses[180]: 
+newclasses[181]: 
+newclasses[182]: 
+newclasses[183]: 
+newclasses[184]: 
+newclasses[185]: 
+newclasses[186]: 
+newclasses[187]: 
+newclasses[188]: 
+newclasses[189]: 
+newclasses[190]: 
+newclasses[191]: 
+newclasses[192]: 
+newclasses[193]: 
+newclasses[194]: 
+newclasses[195]: 
+newclasses[196]: 
+newclasses[197]: 
+newclasses[198]: 
+newclasses[199]: 
+newclasses[200]: 
+newclasses[201]: 
+newclasses[202]: 
+newclasses[203]: 
+newclasses[204]: 
+newclasses[205]: 
+newclasses[206]: 
+newclasses[207]: 
+newclasses[208]: 
+newclasses[209]: 
+newclasses[210]: 
+newclasses[211]: 
+newclasses[212]: 
+newclasses[213]: 
+newclasses[214]: 
+newclasses[215]: 
+newclasses[216]: 
+newclasses[217]: 
+newclasses[218]: 
+newclasses[219]: 
+newclasses[220]: 
+newclasses[221]: 
+newclasses[222]: 
+newclasses[223]: 
+newclasses[224]: 
+newclasses[225]: 
+newclasses[226]: 
+newclasses[227]: 
+newclasses[228]: 
+newclasses[229]: 
+newclasses[230]: 
+newclasses[231]: 
+newclasses[232]: 
+newclasses[233]: 
+newclasses[234]: 
+newclasses[235]: 
+newclasses[236]: 
+newclasses[237]: 
+newclasses[238]: 
+newclasses[239]: 
+newclasses[240]: 
+newclasses[241]: 
+newclasses[242]: 
+newclasses[243]: 
+newclasses[244]: 
+newclasses[245]: 
+newclasses[246]: 
+newclasses[247]: 
+newclasses[248]: 
+newclasses[249]: 
+newclasses[250]: 
+newclasses[251]: 
+newclasses[252]: 
+newclasses[253]: 
+newclasses[254]: 
+newclasses[255]: 
+newclasses[256]: 
+newclasses[257]: 
+newclasses[258]: 
+newclasses[259]: 
+newclasses[260]: 
+newclasses[261]: 
+newclasses[262]: 
+newclasses[263]: 
+newclasses[264]: 
+newclasses[265]: 
+newclasses[266]: 
+newclasses[267]: 
+newclasses[268]: 
+newclasses[269]: 
+newclasses[270]: 
+newclasses[271]: 
+newclasses[272]: 
+newclasses[273]: 
+newclasses[274]: 
+newclasses[275]: 
+newclasses[276]: 
+newclasses[277]: 
+newclasses[278]: 
+newclasses[279]: 
+newclasses[280]: 
+newclasses[281]: 
+newclasses[282]: 
+newclasses[283]: 
+newclasses[284]: 
+newclasses[285]: 
+newclasses[286]: 
+newclasses[287]: 
+newclasses[288]: 
+newclasses[289]: 
+newclasses[290]: 
+newclasses[291]: 
+newclasses[292]: 
+newclasses[293]: 
+newclasses[294]: 
+newclasses[295]: 
+newclasses[296]: 
+newclasses[297]: 
+newclasses[298]: 
+newclasses[299]: 
+newclasses[300]: 
+newclasses[301]: 
+newclasses[302]: 
+newclasses[303]: 
+newclasses[304]: 
+newclasses[305]: 
+newclasses[306]: 
+newclasses[307]: 
+newclasses[308]: 
+newclasses[309]: 
+newclasses[310]: 
+newclasses[311]: 
+newclasses[312]: 
+newclasses[313]: 
+newclasses[314]: 
+newclasses[315]: 
+newclasses[316]: 
+newclasses[317]: 
+newclasses[318]: 
+newclasses[319]: 
+newclasses[320]: 
+newclasses[321]: 
+newclasses[322]: 
+newclasses[323]: 
+newclasses[324]: 
+newclasses[325]: 
+newclasses[326]: 
+newclasses[327]: 
+newclasses[328]: 
+newclasses[329]: 
+newclasses[330]: 
+newclasses[331]: 
+newclasses[332]: 
+newclasses[333]: 
+newclasses[334]: 
+newclasses[335]: 
+newclasses[336]: 
+newclasses[337]: 
+newclasses[338]: 
+newclasses[339]: 
+newclasses[340]: 
+newclasses[341]: 
+newclasses[342]: 
+newclasses[343]: 
+newclasses[344]: 
+newclasses[345]: 
+newclasses[346]: 
+newclasses[347]: 
+newclasses[348]: 
+newclasses[349]: 
+newclasses[350]: 
+newclasses[351]: 
+newclasses[352]: 
+newclasses[353]: 
+newclasses[354]: 
+newclasses[355]: 
+newclasses[356]: 
+newclasses[357]: 
+newclasses[358]: 
+newclasses[359]: 
+newclasses[360]: 
+newclasses[361]: 
+newclasses[362]: 
+newclasses[363]: 
+newclasses[364]: 
+newclasses[365]: 
+newclasses[366]: 
+newclasses[367]: 
+newclasses[368]: 
+newclasses[369]: 
+newclasses[370]: 
+newclasses[371]: 
+newclasses[372]: 
+newclasses[373]: 
+newclasses[374]: 
+newclasses[375]: 
+newclasses[376]: 
+newclasses[377]: 
+newclasses[378]: 
+newclasses[379]: 
+newclasses[380]: 
+newclasses[381]: 
+newclasses[382]: 
+newclasses[383]: 
+newclasses[384]: 
+newclasses[385]: 
+newclasses[386]: 
+newclasses[387]: 
+newclasses[388]: 
+newclasses[389]: 
+newclasses[390]: 
+newclasses[391]: 
+newclasses[392]: 
+newclasses[393]: 
+newclasses[394]: 
+newclasses[395]: 
+newclasses[396]: 
+newclasses[397]: 
+newclasses[398]: 
+newclasses[399]: 
+newclasses[400]: 
+newclasses[401]: 
+newclasses[402]: 
+newclasses[403]: 
+newclasses[404]: 
+newclasses[405]: 
+newclasses[406]: 
+newclasses[407]: 
+newclasses[408]: 
+newclasses[409]: 
+newclasses[410]: 
+newclasses[411]: 
+newclasses[412]: 
+newclasses[413]: 
+newclasses[414]: 
+newclasses[415]: 
+newclasses[416]: 
+newclasses[417]: 
+newclasses[418]: 
+newclasses[419]: 
+newclasses[420]: 
+newclasses[421]: 
+newclasses[422]: 
+newclasses[423]: 
+newclasses[424]: 
+newclasses[425]: 
+newclasses[426]: 
+newclasses[427]: 
+newclasses[428]: 
+newclasses[429]: 
+newclasses[430]: 
+newclasses[431]: 
+newclasses[432]: 
+newclasses[433]: 
+newclasses[434]: 
+newclasses[435]: 
+newclasses[436]: 
+newclasses[437]: 
+newclasses[438]: 
+newclasses[439]: 
+newclasses[440]: 
+newclasses[441]: 
+newclasses[442]: 
+newclasses[443]: 
+newclasses[444]: 
+newclasses[445]: 
+newclasses[446]: 
+newclasses[447]: 
+newclasses[448]: 
+newclasses[449]: 
+newclasses[450]: 
+newclasses[451]: 
+newclasses[452]: 
+newclasses[453]: 
+newclasses[454]: 
+newclasses[455]: 
+newclasses[456]: 
+newclasses[457]: 
+newclasses[458]: 
+newclasses[459]: 
+newclasses[460]: 
+newclasses[461]: 
+newclasses[462]: 
+newclasses[463]: 
+newclasses[464]: 
+newclasses[465]: 
+newclasses[466]: 
+newclasses[467]: 
+newclasses[468]: 
+newclasses[469]: 
+newclasses[470]: 
+newclasses[471]: 
+newclasses[472]: 
+newclasses[473]: 
+newclasses[474]: 
+newclasses[475]: 
+newclasses[476]: 
+newclasses[477]: 
+newclasses[478]: 
+newclasses[479]: 
+newclasses[480]: 
+newclasses[481]: 
+newclasses[482]: 
+newclasses[483]: 
+newclasses[484]: 
+newclasses[485]: 
+newclasses[486]: 
+newclasses[487]: 
+newclasses[488]: 
+newclasses[489]: 
+newclasses[490]: 
+newclasses[491]: 
+newclasses[492]: 
+newclasses[493]: 
+newclasses[494]: 
+newclasses[495]: 
+newclasses[496]: 
+newclasses[497]: 
+newclasses[498]: 
+newclasses[499]: 
+newclasses[500]: 
+newclasses[501]: 
+newclasses[502]: 
+newclasses[503]: 
+newclasses[504]: 
+newclasses[505]: 
+newclasses[506]: 
+newclasses[507]: 
+newclasses[508]: 
+newclasses[509]: 
+newclasses[510]: 
+newclasses[511]: 
+newclasses[512]: 
+newclasses[513]: 
+newclasses[514]: 
+newclasses[515]: 
+newclasses[516]: 
+newclasses[517]: 
+newclasses[518]: 
+newclasses[519]: 
+newclasses[520]: 
+newclasses[521]: 
+newclasses[522]: 
+newclasses[523]: 
+newclasses[524]: 
+newclasses[525]: 
+newclasses[526]: 
+newclasses[527]: 
+newclasses[528]: 
+newclasses[529]: 
+newclasses[530]: 
+newclasses[531]: 
+newclasses[532]: 
+newclasses[533]: 
+newclasses[534]: 
+newclasses[535]: 
+newclasses[536]: 
+newclasses[537]: 
+newclasses[538]: 
+newclasses[539]: 
+newclasses[540]: 
+newclasses[541]: 
+newclasses[542]: 
+newclasses[543]: 
+newclasses[544]: 
+newclasses[545]: 
+newclasses[546]: 
+newclasses[547]: 
+newclasses[548]: 
+newclasses[549]: 
+newclasses[550]: 
+newclasses[551]: 
+newclasses[552]: 
+newclasses[553]: 
+newclasses[554]: 
+newclasses[555]: 
+newclasses[556]: 
+newclasses[557]: 
+newclasses[558]: 
+newclasses[559]: 
+newclasses[560]: 
+newclasses[561]: 
+newclasses[562]: 
+newclasses[563]: 
+newclasses[564]: 
+newclasses[565]: 
+newclasses[566]: 
+newclasses[567]: 
+newclasses[568]: 
+newclasses[569]: 
+newclasses[570]: 
+newclasses[571]: 
+newclasses[572]: 
+newclasses[573]: 
+newclasses[574]: 
+newclasses[575]: 
+newclasses[576]: 
+newclasses[577]: 
+newclasses[578]: 
+newclasses[579]: 
+newclasses[580]: 
+newclasses[581]: 
+newclasses[582]: 
+newclasses[583]: 
+newclasses[584]: 
+newclasses[585]: 
+newclasses[586]: 
+newclasses[587]: 
+newclasses[588]: 
+newclasses[589]: 
+newclasses[590]: 
+newclasses[591]: 
+newclasses[592]: 
+newclasses[593]: 
+newclasses[594]: 
+newclasses[595]: 
+newclasses[596]: 
+newclasses[597]: 
+newclasses[598]: 
+newclasses[599]: 
+newclasses[600]: 
+newclasses[601]: 
+newclasses[602]: 
+newclasses[603]: 
+newclasses[604]: 
+newclasses[605]: 
+newclasses[606]: 
+newclasses[607]: 
+newclasses[608]: 
+newclasses[609]: 
+newclasses[610]: 
+newclasses[611]: 
+newclasses[612]: 
+newclasses[613]: 
+newclasses[614]: 
+newclasses[615]: 
+newclasses[616]: 
+newclasses[617]: 
+newclasses[618]: 
+newclasses[619]: 
+newclasses[620]: 
+newclasses[621]: 
+newclasses[622]: 
+newclasses[623]: 
+newclasses[624]: 
+newclasses[625]: 
+newclasses[626]: 
+newclasses[627]: 
+newclasses[628]: 
+newclasses[629]: 
+newclasses[630]: 
+newclasses[631]: 
+newclasses[632]: 
+newclasses[633]: 
+newclasses[634]: 
+newclasses[635]: 
+newclasses[636]: 
+newclasses[637]: 
+newclasses[638]: 
+newclasses[639]: 
+newclasses[640]: 
+newclasses[641]: 
+newclasses[642]: 
+newclasses[643]: 
+newclasses[644]: 
+newclasses[645]: 
+newclasses[646]: 
+newclasses[647]: 
+newclasses[648]: 
+newclasses[649]: 
+newclasses[650]: 
+newclasses[651]: 
+newclasses[652]: 
+newclasses[653]: 
+newclasses[654]: 
+newclasses[655]: 
+newclasses[656]: 
+newclasses[657]: 
+newclasses[658]: 
+newclasses[659]: 
+newclasses[660]: 
+newclasses[661]: 
+newclasses[662]: 
+newclasses[663]: 
+newclasses[664]: 
+newclasses[665]: 
+newclasses[666]: 
+newclasses[667]: 
+newclasses[668]: 
+newclasses[669]: 
+newclasses[670]: 
+newclasses[671]: 
+newclasses[672]: 
+newclasses[673]: 
+newclasses[674]: 
+newclasses[675]: 
+newclasses[676]: 
+newclasses[677]: 
+newclasses[678]: 
+newclasses[679]: 
+newclasses[680]: 
+newclasses[681]: 
+newclasses[682]: 
+newclasses[683]: 
+newclasses[684]: 
+newclasses[685]: 
+newclasses[686]: 
+newclasses[687]: 
+newclasses[688]: 
+newclasses[689]: 
+newclasses[690]: 
+newclasses[691]: 
+newclasses[692]: 
+newclasses[693]: 
+newclasses[694]: 
+newclasses[695]: 
+newclasses[696]: 
+newclasses[697]: 
+newclasses[698]: 
+newclasses[699]: 
+newclasses[700]: 
+newclasses[701]: 
+newclasses[702]: 
+newclasses[703]: 
+newclasses[704]: 
+newclasses[705]: 
+newclasses[706]: 
+newclasses[707]: 
+newclasses[708]: 
+newclasses[709]: 
+newclasses[710]: 
+newclasses[711]: 
+newclasses[712]: 
+newclasses[713]: 
+newclasses[714]: 
+newclasses[715]: 
+newclasses[716]: 
+newclasses[717]: 
+newclasses[718]: 
+newclasses[719]: 
+newclasses[720]: 
+newclasses[721]: 
+newclasses[722]: 
+newclasses[723]: 
+newclasses[724]: 
+newclasses[725]: 
+newclasses[726]: 
+newclasses[727]: 
+newclasses[728]: 
+newclasses[729]: 
+newclasses[730]: 
+newclasses[731]: 
+newclasses[732]: 
+newclasses[733]: 
+newclasses[734]: 
+newclasses[735]: 
+newclasses[736]: 
+newclasses[737]: 
+newclasses[738]: 
+newclasses[739]: 
+newclasses[740]: 
+newclasses[741]: 
+newclasses[742]: 
+newclasses[743]: 
+newclasses[744]: 
+newclasses[745]: 
+newclasses[746]: 
+newclasses[747]: 
+newclasses[748]: 
+newclasses[749]: 
+newclasses[750]: 
+newclasses[751]: 
+newclasses[752]: 
+newclasses[753]: 
+newclasses[754]: 
+newclasses[755]: 
+newclasses[756]: 
+newclasses[757]: 
+newclasses[758]: 
+newclasses[759]: 
+newclasses[760]: 
+newclasses[761]: 
+newclasses[762]: 
+newclasses[763]: 
+newclasses[764]: 
+newclasses[765]: 
+newclasses[766]: 
+newclasses[767]: 
+newclasses[768]: 
+newclasses[769]: 
+newclasses[770]: 
+newclasses[771]: 
+newclasses[772]: 
+newclasses[773]: 
+newclasses[774]: 
+newclasses[775]: 
+newclasses[776]: 
+newclasses[777]: 
+newclasses[778]: 
+newclasses[779]: 
+newclasses[780]: 
+newclasses[781]: 
+newclasses[782]: 
+newclasses[783]: 
+newclasses[784]: 
+newclasses[785]: 
+newclasses[786]: 
+newclasses[787]: 
+newclasses[788]: 
+newclasses[789]: 
+newclasses[790]: 
+newclasses[791]: 
+newclasses[792]: 
+newclasses[793]: 
+newclasses[794]: 
+newclasses[795]: 
+newclasses[796]: 
+newclasses[797]: 
+newclasses[798]: 
+newclasses[799]: 
+newclasses[800]: 
+newclasses[801]: 
+newclasses[802]: 
+newclasses[803]: 
+newclasses[804]: 
+newclasses[805]: 
+newclasses[806]: 
+newclasses[807]: 
+newclasses[808]: 
+newclasses[809]: 
+newclasses[810]: 
+newclasses[811]: 
+newclasses[812]: 
+newclasses[813]: 
+newclasses[814]: 
+newclasses[815]: 
+newclasses[816]: 
+newclasses[817]: 
+newclasses[818]: 
+newclasses[819]: 
+newclasses[820]: 
+newclasses[821]: 
+newclasses[822]: 
+newclasses[823]: 
+newclasses[824]: 
+newclasses[825]: 
+newclasses[826]: 
+newclasses[827]: 
+newclasses[828]: 
+newclasses[829]: 
+newclasses[830]: 
+newclasses[831]: 
+newclasses[832]: 
+newclasses[833]: 
+newclasses[834]: 
+newclasses[835]: 
+newclasses[836]: 
+newclasses[837]: 
+newclasses[838]: 
+newclasses[839]: 
+newclasses[840]: 
+newclasses[841]: 
+newclasses[842]: 
+newclasses[843]: 
+newclasses[844]: 
+newclasses[845]: 
+newclasses[846]: 
+newclasses[847]: 
+newclasses[848]: 
+newclasses[849]: 
+newclasses[850]: 
+newclasses[851]: 
+newclasses[852]: 
+newclasses[853]: 
+newclasses[854]: 
+newclasses[855]: 
+newclasses[856]: 
+newclasses[857]: 
+newclasses[858]: 
+newclasses[859]: 
+newclasses[860]: 
+newclasses[861]: 
+newclasses[862]: 
+newclasses[863]: 
+newclasses[864]: 
+newclasses[865]: 
+newclasses[866]: 
+newclasses[867]: 
+newclasses[868]: 
+newclasses[869]: 
+newclasses[870]: 
+newclasses[871]: 
+newclasses[872]: 
+newclasses[873]: 
+newclasses[874]: 
+newclasses[875]: 
+newclasses[876]: 
+newclasses[877]: 
+newclasses[878]: 
+newclasses[879]: 
+newclasses[880]: 
+newclasses[881]: 
+newclasses[882]: 
+newclasses[883]: 
+newclasses[884]: 
+newclasses[885]: 
+newclasses[886]: 
+newclasses[887]: 
+newclasses[888]: 
+newclasses[889]: 
+newclasses[890]: 
+newclasses[891]: 
+newclasses[892]: 
+newclasses[893]: 
+newclasses[894]: 
+newclasses[895]: 
+newclasses[896]: 
+newclasses[897]: 
+newclasses[898]: 
+newclasses[899]: 
+newclasses[900]: 
+newclasses[901]: 
+newclasses[902]: 
+newclasses[903]: 
+newclasses[904]: 
+newclasses[905]: 
+newclasses[906]: 
+newclasses[907]: 
+newclasses[908]: 
+newclasses[909]: 
+newclasses[910]: 
+newclasses[911]: 
+newclasses[912]: 
+newclasses[913]: 
+newclasses[914]: 
+newclasses[915]: 
+newclasses[916]: 
+newclasses[917]: 
+newclasses[918]: 
+newclasses[919]: 
+newclasses[920]: 
+newclasses[921]: 
+newclasses[922]: 
+newclasses[923]: 
+newclasses[924]: 
+newclasses[925]: 
+newclasses[926]: 
+newclasses[927]: 
+newclasses[928]: 
+newclasses[929]: 
+newclasses[930]: 
+newclasses[931]: 
+newclasses[932]: 
+newclasses[933]: 
+newclasses[934]: 
+newclasses[935]: 
+newclasses[936]: 
+newclasses[937]: 
+newclasses[938]: 
+newclasses[939]: 
+newclasses[940]: 
+newclasses[941]: 
+newclasses[942]: 
+newclasses[943]: 
+newclasses[944]: 
+newclasses[945]: 
+newclasses[946]: 
+newclasses[947]: 
+newclasses[948]: 
+newclasses[949]: 
+newclasses[950]: 
+newclasses[951]: 
+newclasses[952]: 
+newclasses[953]: 
+newclasses[954]: 
+newclasses[955]: 
+newclasses[956]: 
+newclasses[957]: 
+newclasses[958]: 
+newclasses[959]: 
+newclasses[960]: 
+newclasses[961]: 
+newclasses[962]: 
+newclasses[963]: 
+newclasses[964]: 
+newclasses[965]: 
+newclasses[966]: 
+newclasses[967]: 
+newclasses[968]: 
+newclasses[969]: 
+newclasses[970]: 
+newclasses[971]: 
+newclasses[972]: 
+newclasses[973]: 
+newclasses[974]: 
+newclasses[975]: 
+newclasses[976]: 
+newclasses[977]: 
+newclasses[978]: 
+newclasses[979]: 
+newclasses[980]: 
+newclasses[981]: 
+newclasses[982]: 
+newclasses[983]: 
+newclasses[984]: 
+newclasses[985]: 
+newclasses[986]: 
+newclasses[987]: 
+newclasses[988]: 
+newclasses[989]: 
+newclasses[990]: 
+newclasses[991]: 
+newclasses[992]: 
+newclasses[993]: 
+newclasses[994]: 
+newclasses[995]: 
+newclasses[996]: 
+newclasses[997]: 
+newclasses[998]: 
+newclasses[999]: 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc main.c -o run[C
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1
