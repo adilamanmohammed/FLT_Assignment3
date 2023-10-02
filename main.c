@@ -365,21 +365,6 @@ int main(int argc, char *argv[])
 
     }
 
-    // Create text files
-    /*for (int fileNumber = 1; fileNumber <= buffindex-2; fileNumber++) {
-        char filename[50];
-        sprintf(filename, "group_%d.txt", fileNumber); 
-        
-        
-        FILE *file = fopen(filename, "w");
-
-        if (file == NULL) {
-            printf("Failed to create %s\n", filename);
-        } else {
-            //printf("%s created successfully\n", filename);
-            fclose(file); 
-        }
-    }*/
 
 
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<Actual logic >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
