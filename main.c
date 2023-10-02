@@ -401,7 +401,67 @@ int main(int argc, char *argv[])
 
 
     //check and make eqivalence states
+    for(int i=1;i<buffindex-1;i++)
+    {   subcount=0;
+        int infinal=isCharacterPresent(A,i+'0');
+        int flag=isCharacterPresent(appendednum,i+'0');
+        if(flag==1 || infinal==1)
+        {
+            printf("skip@%d\n",i);
+        }
+        else if(i==buffindex-2)
+        {
+            newclasses[scount][subcount]=i+'0';
+            appendChar(appendednum,i+'0');
+            printf("newclass[%d][%d]=%c\n",scount,subcount,i+'0');
+        }
+        else
+        {
+            int tflag=0;
+            int len=strlen(newclasses[scount]);
+            if(len==0)
+            {
+                newclasses[scount][subcount]=i+'0';
+                appendChar(appendednum,i+'0');
+                tflag++;
+                subcount++;
+            }
+            
+            for(int j=i+1;j<buffindex-1;j++)
+            {
+                /*if(j==buffindex-1)
+                {
+                    newclasses[scount][subcount]=i+'0';
+                    appendChar(appendednum,i+'0');
+                    tflag++;
+                    subcount++; 
+                }
+                else
+                {*/
+                int finalflag=isCharacterPresent(A,j+'0');
+                if(finalflag!=1)
+                {
+                    int compare=strcmp(buffer[i],buffer[j]);
+                    if(compare==0)
+                    {
+                        newclasses[scount][subcount]=j+'0';
+                        appendChar(appendednum,j+'0');
+                        tflag++;
+                        subcount++;
+                    }
+                }
+                    
+                //}
+            }
 
+            if(tflag!=0)
+            {
+                scount++;
+            }
+        }
+        
+        
+    }
     
 
    
@@ -412,9 +472,12 @@ int main(int argc, char *argv[])
 
 
    //check debug loop
-    
+    for (int i = 0; i < scount+1; i++) {
+       printf("newclasses[%d]: %s\n", i, newclasses[i]);
+    }
+
    
-    
+    printf("append: %s\n",appendednum);
 
 
 
