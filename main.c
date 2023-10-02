@@ -154,8 +154,19 @@ int isCharacterPresent(const char *array, char target) {
 
 
 
-int findStringLength(char array[MAX][MAX][MAX], int i, int j) {
-    return strlen(array[i][j]);
+int checkgroup(int character) {
+    int foundRow = -1; // Initialize to -1 to indicate not found
+    char A=character+'0';
+
+    for(int i=0;i<scount;i++)
+    {
+        if(isCharacterPresent(newclasses[i],A)==1)
+        {
+            return i;
+            break;
+        }
+    }
+    
 }
 
 
@@ -271,7 +282,7 @@ int main(int argc, char *argv[])
     for (int i = 0; i < sindex; i++) {
        printf("sbuff[%d]: %s\n", i, sbuff[i]);
     }
-    //printf("\nSindex=%d \n",sindex);
+    printf("Sindex=%d \n\n",sindex);
 
 
     // Close the first text file
@@ -430,15 +441,7 @@ int main(int argc, char *argv[])
             
             for(int j=i+1;j<buffindex-1;j++)
             {
-                /*if(j==buffindex-1)
-                {
-                    newclasses[scount][subcount]=i+'0';
-                    appendChar(appendednum,i+'0');
-                    tflag++;
-                    subcount++; 
-                }
-                else
-                {*/
+                
                 int finalflag=isCharacterPresent(A,j+'0');
                 if(finalflag!=1)
                 {
@@ -496,15 +499,6 @@ int main(int argc, char *argv[])
             
             for(int j=i+1;j<buffindex-1;j++)
             {
-                /*if(j==buffindex-1)
-                {
-                    newclasses[scount][subcount]=i+'0';
-                    appendChar(appendednum,i+'0');
-                    tflag++;
-                    subcount++; 
-                }
-                else
-                {*/
                 int nonfinalflag=isCharacterPresent(KA,j+'0');
                 if(nonfinalflag!=1)
                 {
@@ -539,45 +533,22 @@ int main(int argc, char *argv[])
 
    
     printf("append: %s\n",appendednum);
-    printf("scount: %d\n",scount);
+    printf("scount: %d\n\n",scount);
 
 
     //check strings.txt and check each string belongs to which group
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     for(int i=0;i<sindex;i++)
     {
         int class_state=belongs_to_which_equivalence_state(sbuff[i]);
-        //printf("%d \n", class_state);
-        //save_into_group(sbuff[i],class_state);
+        int check_in_which_group=checkgroup(class_state);
+        printf("%s belongs : %d , and final is %d\n",sbuff[i], class_state,check_in_which_group);
+        save_into_group(sbuff[i],check_in_which_group+1);
 
     }
 
 
 
-
-
-
-
-
+    
 
 
 
