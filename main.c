@@ -280,11 +280,11 @@ int main(int argc, char *argv[])
 	
     //check that the given transition is valid DFSM or Not
     int V=0;
-    for(int j=1;j<=alphalength;j++)
+    for(int j=1;j<buffindex-1;j++)
     {
         if(strlen(buffer[j])==alphalength)
         {
-            printf("buffer[%d]:%ld=alphalength:%d\n",j,strlen(buffer[j]),alphalength);
+            //printf("buffer[%d]:%ld=alphalength:%d\n",j,strlen(buffer[j]),alphalength);
             V=0;
         }
         else{
@@ -397,10 +397,10 @@ int main(int argc, char *argv[])
     // Print A and KA
     printf("A: %s\n", A);
     printf("KA: %s\n", KA);
-    printf("no reach: %s\n", noreach);
+    printf("no reach: %s\n\n", noreach);
 
-
-    //check and make eqivalence states
+    printf("for non final:\n");
+    //check and make eqivalence states for non final logic
     for(int i=1;i<buffindex-1;i++)
     {   subcount=0;
         int infinal=isCharacterPresent(A,i+'0');
@@ -413,7 +413,8 @@ int main(int argc, char *argv[])
         {
             newclasses[scount][subcount]=i+'0';
             appendChar(appendednum,i+'0');
-            printf("newclass[%d][%d]=%c\n",scount,subcount,i+'0');
+            //printf("newclass[%d][%d]=%c\n",scount,subcount,i+'0');
+            scount++;
         }
         else
         {
@@ -462,22 +463,103 @@ int main(int argc, char *argv[])
         
         
     }
-    
-
-   
 
 
 
+    printf("for final states:\n");
+    //check and make eqivalence states for non final logic
+    for(int i=1;i<buffindex-1;i++)
+    {   subcount=0;
+        int innonfinal=isCharacterPresent(KA,i+'0');
+        int flag=isCharacterPresent(appendednum,i+'0');
+        if(flag==1 || innonfinal==1)
+        {
+            printf("skip@%d\n",i);
+        }
+        else if(i==buffindex-2)
+        {
+            newclasses[scount][subcount]=i+'0';
+            appendChar(appendednum,i+'0');
+            //printf("newclass[%d][%d]=%c\n",scount,subcount,i+'0');
+        }
+        else
+        {
+            int tflag=0;
+            int len=strlen(newclasses[scount]);
+            if(len==0)
+            {
+                newclasses[scount][subcount]=i+'0';
+                appendChar(appendednum,i+'0');
+                tflag++;
+                subcount++;
+            }
+            
+            for(int j=i+1;j<buffindex-1;j++)
+            {
+                /*if(j==buffindex-1)
+                {
+                    newclasses[scount][subcount]=i+'0';
+                    appendChar(appendednum,i+'0');
+                    tflag++;
+                    subcount++; 
+                }
+                else
+                {*/
+                int nonfinalflag=isCharacterPresent(KA,j+'0');
+                if(nonfinalflag!=1)
+                {
+                    int compare=strcmp(buffer[i],buffer[j]);
+                    if(compare==0)
+                    {
+                        newclasses[scount][subcount]=j+'0';
+                        appendChar(appendednum,j+'0');
+                        tflag++;
+                        subcount++;
+                    }
+                }
+                    
+                //}
+            }
+
+            if(tflag!=0)
+            {
+                scount++;
+            }
+        }
+        
+        
+    }
 
 
-
+    printf("\n");
    //check debug loop
-    for (int i = 0; i < scount+1; i++) {
+    for (int i = 0; i < scount; i++) {
        printf("newclasses[%d]: %s\n", i, newclasses[i]);
     }
 
    
     printf("append: %s\n",appendednum);
+    printf("scount: %d\n",scount);
+
+
+    //check strings.txt and check each string belongs to which group
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -488,6 +570,17 @@ int main(int argc, char *argv[])
         //save_into_group(sbuff[i],class_state);
 
     }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
