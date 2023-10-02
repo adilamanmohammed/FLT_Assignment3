@@ -1,0 +1,1995 @@
+Script started on 2023-10-02 02:13:47+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="218" LINES="38"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:410:16:[m[K [01;31m[Kerror: [m[K‘[01m[Klength[m[K’ undeclared (first use in this function)
+  410 |             if([01;31m[Klength[m[K==0)
+      |                [01;31m[K^~~~~~[m[K
+[01m[Kmain.c:410:16:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:412:47:[m[K [01;31m[Kerror: [m[Klvalue required as unary ‘[01m[K&[m[K’ operand
+  412 |                 insertCharAtIndex(newclasses, [01;31m[K&[m[Kstrlen(newclasses), scount, i+'0');
+      |                                               [01;31m[K^[m[K
+[01m[Kmain.c:418:51:[m[K [01;31m[Kerror: [m[Klvalue required as unary ‘[01m[K&[m[K’ operand
+  418 |                     insertCharAtIndex(newclasses, [01;31m[K&[m[Kstrlen(newclasses), scount, i+'0');
+      |                                                   [01;31m[K^[m[K
+[01m[Kmain.c:424:55:[m[K [01;31m[Kerror: [m[Klvalue required as unary ‘[01m[K&[m[K’ operand
+  424 |                         insertCharAtIndex(newclasses, [01;31m[K&[m[Kstrlen(newclasses), scount, i+'0');
+      |                                                       [01;31m[K^[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended at 0: 6
+appended at 1: 5
+appended at 2: 4
+appended at 3: 3
+appended at 4: 3
+appended at 5: 2
+appended at 6: 1
+appended at 7: 1
+appended at 8: 1
+appended at 9: 1
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended at 0: 1
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:448:36:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+  448 |     printf("appended at %d: %s\n", [01;31m[Ki[m[K,newclasses);
+      |                                    [01;31m[K^[m[K
+[01m[Kmain.c:448:36:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended: 6543321111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended: 1234563111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended: 1234563111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:11
+appended:11
+appended:111
+appended:111
+appended:1111
+appended:1111
+appended:1111
+appended:1111
+appended:1111
+appended:11112
+appended:11112
+appended:111123
+appended:111123
+appended:1111233
+appended:1111233
+appended:1111233
+appended:11112334
+appended:11112334
+appended:111123345
+appended:1111233456
+appended: 1234563111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:11
+appended:11
+appended:111
+appended:111
+appended:1111
+appended:1111
+appended:1111
+appended:1111
+appended:1111
+appended:11112
+appended:11112
+appended:111123
+appended:111123
+appended:1111233
+appended:1111233
+appended:1111233
+appended:11112334
+appended:11112334
+appended:111123345
+appended:1111233456
+appended: 1234563111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:403:19:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrchr[m[K’ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+  403 |         if(strchr([01;35m[Kappendednum[m[K,i+'0'))
+      |                   [01;35m[K^~~~~~~~~~~[m[K
+      |                   [01;35m[K|[m[K
+      |                   [01;35m[Kchar[m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:226:14:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar[m[K’
+  226 | extern char *[01;36m[Kstrchr[m[K (const char *__s, int __c)
+      |              [01;36m[K^~~~~~[m[K
+[01m[Kmain.c:413:28:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KappendChar[m[K’ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+  413 |                 appendChar([01;35m[Kappendednum[m[K,i+'0');
+      |                            [01;35m[K^~~~~~~~~~~[m[K
+      |                            [01;35m[K|[m[K
+      |                            [01;35m[Kchar[m[K
+[01m[Kmain.c:69:22:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar *[m[K’ but argument is of type ‘[01m[Kchar[m[K’
+   69 | void appendChar([01;36m[Kchar newclasses[][m[K, char ch) {
+      |                 [01;36m[K~~~~~^~~~~~~~~~~~[m[K
+[01m[Kmain.c:423:32:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KappendChar[m[K’ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+  423 |                     appendChar([01;35m[Kappendednum[m[K,i+'0');
+      |                                [01;35m[K^~~~~~~~~~~[m[K
+      |                                [01;35m[K|[m[K
+      |                                [01;35m[Kchar[m[K
+[01m[Kmain.c:69:22:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar *[m[K’ but argument is of type ‘[01m[Kchar[m[K’
+   69 | void appendChar([01;36m[Kchar newclasses[][m[K, char ch) {
+      |                 [01;36m[K~~~~~^~~~~~~~~~~~[m[K
+[01m[Kmain.c:431:36:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KappendChar[m[K’ makes pointer from integer without a cast [[01;35m[K-Wint-conversion[m[K]
+  431 |                         appendChar([01;35m[Kappendednum[m[K,i+'0');
+      |                                    [01;35m[K^~~~~~~~~~~[m[K
+      |                                    [01;35m[K|[m[K
+      |                                    [01;35m[Kchar[m[K
+[01m[Kmain.c:69:22:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar *[m[K’ but argument is of type ‘[01m[Kchar[m[K’
+   69 | void appendChar([01;36m[Kchar newclasses[][m[K, char ch) {
+      |                 [01;36m[K~~~~~^~~~~~~~~~~~[m[K
+[01m[Kmain.c:434:35:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+  434 |                 printf("appended:[01;35m[K%s[m[K\n",[32m[Kappendednum[m[K);
+      |                                  [01;35m[K~^[m[K    [32m[K~~~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K    [32m[K|[m[K
+      |                                   [01;35m[K|[m[K    [32m[Kint[m[K
+      |                                   [01;35m[Kchar *[m[K
+      |                                  [32m[K%d[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:404:23:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+  404 |         if(appendednum[01;35m[K==[m[Ki+'0')
+      |                       [01;35m[K^~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:404:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kif[m[K’
+  404 |         [01;31m[Kif[m[K(appendednum==charValue)
+      |         [01;31m[K^~[m[K
+[01m[Kmain.c:408:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  408 |         [01;31m[Kelse[m[K
+      |         [01;31m[K^~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:404:23:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+  404 |         if(appendednum[01;35m[K==[m[KcharValue)
+      |                       [01;35m[K^~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:404:24:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+  404 |         if(appendednum [01;35m[K==[m[K charValue)
+      |                        [01;35m[K^~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:404:24:[m[K [01;35m[Kwarning: [m[Kcomparison between pointer and integer
+  404 |         if(appendednum [01;35m[K==[m[K charValue)
+      |                        [01;35m[K^~[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleare[K
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o runclear[Kgcc main.c -o runclear[Kgcc main.c -o run./run DFSM.txt string.txt [9Pgcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:11
+appended:11
+appended:111
+appended:111
+appended:1111
+appended:1111
+appended:1111
+appended:1111
+appended:1111
+appended:11112
+appended:11112
+appended:111123
+appended:111123
+appended:1111233
+appended:1111233
+appended:1111233
+appended:11112334
+appended:11112334
+appended:111123345
+appended:1111233456
+appended: 1234563111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:415:53:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K==[m[K’ token
+  415 |         if (isCharacterPresent(appendednum, i+'0')) [01;31m[K==[m[K 1)
+      |                                                     [01;31m[K^~[m[K
+[01m[Kmain.c:415:57:[m[K [01;31m[Kerror: [m[Kexpected statement before ‘[01m[K)[m[K’ token
+  415 |         if (isCharacterPresent(appendednum, i+'0')) == 1[01;31m[K)[m[K
+      |                                                         [01;31m[K^[m[K
+[01m[Kmain.c:419:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  419 |         [01;31m[Kelse[m[K
+      |         [01;31m[K^~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clw[Kear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./gcc main.c -o runclear[Kgcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:11
+appended:11
+appended:111
+appended:111
+appended:1111
+appended:1111
+appended:1111
+appended:1111
+appended:1111
+appended:11112
+appended:11112
+appended:111123
+appended:111123
+appended:1111233
+appended:1111233
+appended:1111233
+appended:11112334
+appended:11112334
+appended:111123345
+appended:1111233456
+appended: 1234563111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:415:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kif[m[K’
+  415 |         [01;31m[Kif[m[K (isCharacterPresent(appendednum, charValue) == 1)
+      |         [01;31m[K^~[m[K
+[01m[Kmain.c:419:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kelse[m[K’ without a previous ‘[01m[Kif[m[K’
+  419 |         [01;31m[Kelse[m[K
+      |         [01;31m[K^~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:11
+appended:11
+appended:111
+appended:111
+appended:1111
+appended:1111
+appended:1111
+appended:1111
+appended:1111
+appended:11112
+appended:11112
+appended:111123
+appended:111123
+appended:1111233
+appended:1111233
+appended:1111233
+appended:11112334
+appended:11112334
+appended:111123345
+appended:1111233456
+appended: 1234563111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:
+appended:1
+appended:1
+appended:11
+appended:11
+appended:111
+appended:111
+appended:111
+appended:111
+appended:111
+appended:1112
+appended:1112
+appended:11123
+appended:11123
+appended:111233
+appended:111233
+appended:111233
+appended:1112334
+appended:1112334
+appended:11123345
+appended:111233456
+appended: 1234563111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:1351
+appended:1351
+appended:1351
+appended:1351
+appended:1351
+appended:13512
+skip @3
+appended:13512
+appended:13512
+appended:135124
+skip @5
+appended:1351246
+appended: 1246111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+skip @3
+appended:135
+appended:135
+skip @5
+appended: 111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+skip @3
+appended:135
+appended:135
+skip @5
+appended: 111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+skip @3
+appended:135
+appended:135
+skip @5
+appended: 111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+skip @3
+appended:135
+appended:135
+skip @5
+appended: 1116
+appended: 1116
+appended: 1116
+appended: 1116
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+skip @3
+appended:135
+appended:135
+skip @5
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+skip @3
+appended:135
+appended:135
+skip @5
+appended:1356
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:470:28:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 3 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+  470 |     printf("[%d]appended: [01;35m[K%s[m[K\n",i,[32m[Knewclasses[0][m[K);
+      |                           [01;35m[K~^[m[K      [32m[K~~~~~~~~~~~~~[m[K
+      |                            [01;35m[K|[m[K                [32m[K|[m[K
+      |                            [01;35m[Kchar *[m[K           [32m[Kint[m[K
+      |                           [32m[K%d[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+skip @3
+appended:135
+appended:135
+skip @5
+appended:1356
+Segmentation fault (core dumped)
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:470:46:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K][m[K’ token
+  470 |     printf("[%d]appended: %s\n",i,newclasses[[01;31m[K][m[K);
+      |                                              [01;31m[K^[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kgcc main.c -o run./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+skip @3
+appended:135
+appended:135
+skip @5
+appended:1356
+[0]appended: 1116
+[1]appended: 1116
+[2]appended: 1116
+[3]appended: 1116
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+skip @3
+appended:135
+appended:135
+skip @5
+appended:1356
+[0]appended: 111
+[1]appended: 111
+[2]appended: 111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:1355
+appended:1355
+appended:1355
+appended:1355
+appended:1355
+appended:13556
+[0]appended: 1131
+[1]appended: 1131
+[2]appended: 1131
+[3]appended: 1131
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+appended:135
+skip @3
+appended:135
+appended:135
+skip @5
+appended:1356
+[0]appended: 111
+[1]appended: 111
+[2]appended: 111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:470:31:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+  470 |     printf("newclasses: %s\n",[01;31m[Ki[m[K,newclasses);
+      |                               [01;31m[K^[m[K
+[01m[Kmain.c:470:31:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+newclasses: 111
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+newclasses: 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:144:28:[m[K [01;31m[Kerror: [m[Karray type has incomplete element type ‘[01m[Kchar[][m[K’
+  144 | void initializeBuffer(char [01;31m[Kbuffer[m[K[][], int row, int column, char ch) {
+      |                            [01;31m[K^~~~~~[m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kdeclaration of ‘[01m[Kbuffer[m[K’ as multidimensional array must have bounds for all dimensions except the first
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:412:31:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  412 |             int length=strlen([01;35m[Knewclasses[m[K);
+      |                               [01;35m[K^~~~~~~~~~[m[K
+      |                               [01;35m[K|[m[K
+      |                               [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:415:34:[m[K [01;31m[Kerror: [m[Ktype of formal parameter 1 is incomplete
+  415 |                 initializeBuffer([01;31m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[Kmain.c:422:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  422 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:423:38:[m[K [01;31m[Kerror: [m[Ktype of formal parameter 1 is incomplete
+  423 |                     initializeBuffer([01;31m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                      [01;31m[K^~~~~~~~~~[m[K
+[01m[Kmain.c:437:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  437 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:438:42:[m[K [01;31m[Kerror: [m[Ktype of formal parameter 1 is incomplete
+  438 |                         initializeBuffer([01;31m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                          [01;31m[K^~~~~~~~~~[m[K
+[01m[Kmain.c:464:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  464 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KinitializeBuffer[m[K’:
+[01m[Kmain.c:145:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Kbuffer[m[K’ will return size of ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  145 |     if (row >= 0 && row < sizeof[01;35m[K([m[Kbuffer) / sizeof(buffer[0]) &&
+      |                                 [01;35m[K^[m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kdeclared here
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:412:31:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  412 |             int length=strlen([01;35m[Knewclasses[m[K);
+      |                               [01;35m[K^~~~~~~~~~[m[K
+      |                               [01;35m[K|[m[K
+      |                               [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:422:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  422 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:437:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  437 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:464:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  464 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KinitializeBuffer[m[K’:
+[01m[Kmain.c:145:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Kbuffer[m[K’ will return size of ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  145 |     if (row >= 0 && row < sizeof[01;35m[K([m[Kbuffer) / sizeof(buffer[0]) &&
+      |                                 [01;35m[K^[m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kdeclared here
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:412:31:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  412 |             int length=strlen([01;35m[Knewclasses[m[K);
+      |                               [01;35m[K^~~~~~~~~~[m[K
+      |                               [01;35m[K|[m[K
+      |                               [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:422:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  422 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:437:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  437 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:464:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  464 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KinitializeBuffer[m[K’:
+[01m[Kmain.c:145:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Kbuffer[m[K’ will return size of ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  145 |     if (row >= 0 && row < sizeof[01;35m[K([m[Kbuffer) / sizeof(buffer[0]) &&
+      |                                 [01;35m[K^[m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kdeclared here
+  144 | void initializeBuffer([01;36m[Kchar buffer[MAX][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:412:31:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  412 |             int length=strlen([01;35m[Knewclasses[m[K);
+      |                               [01;35m[K^~~~~~~~~~[m[K
+      |                               [01;35m[K|[m[K
+      |                               [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:422:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  422 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:437:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  437 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:464:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  464 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o runclear[K
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o runclear[Kgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KinitializeBuffer[m[K’:
+[01m[Kmain.c:145:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Kbuffer[m[K’ will return size of ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  145 |     if (row >= 0 && row < sizeof[01;35m[K([m[Kbuffer) / sizeof(buffer[0]) &&
+      |                                 [01;35m[K^[m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kdeclared here
+  144 | void initializeBuffer([01;36m[Kchar buffer[MAX][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:412:31:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  412 |             int length=strlen([01;35m[Knewclasses[m[K);
+      |                               [01;35m[K^~~~~~~~~~[m[K
+      |                               [01;35m[K|[m[K
+      |                               [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:422:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  422 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:437:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  437 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:464:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  464 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:144:28:[m[K [01;31m[Kerror: [m[Karray type has incomplete element type ‘[01m[Kchar[][m[K’
+  144 | void initializeBuffer(char [01;31m[Kbuffer[m[K[][], int row, int column, char ch) {
+      |                            [01;31m[K^~~~~~[m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kdeclaration of ‘[01m[Kbuffer[m[K’ as multidimensional array must have bounds for all dimensions except the first
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:412:31:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  412 |             int length=strlen([01;35m[Knewclasses[m[K);
+      |                               [01;35m[K^~~~~~~~~~[m[K
+      |                               [01;35m[K|[m[K
+      |                               [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:415:34:[m[K [01;31m[Kerror: [m[Ktype of formal parameter 1 is incomplete
+  415 |                 initializeBuffer([01;31m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                  [01;31m[K^~~~~~~~~~[m[K
+[01m[Kmain.c:422:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  422 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:423:38:[m[K [01;31m[Kerror: [m[Ktype of formal parameter 1 is incomplete
+  423 |                     initializeBuffer([01;31m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                      [01;31m[K^~~~~~~~~~[m[K
+[01m[Kmain.c:437:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  437 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:438:42:[m[K [01;31m[Kerror: [m[Ktype of formal parameter 1 is incomplete
+  438 |                         initializeBuffer([01;31m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                          [01;31m[K^~~~~~~~~~[m[K
+[01m[Kmain.c:464:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  464 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KinitializeBuffer[m[K’:
+[01m[Kmain.c:145:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Kbuffer[m[K’ will return size of ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  145 |     if (row >= 0 && row < sizeof[01;35m[K([m[Kbuffer) / sizeof(buffer[0]) &&
+      |                                 [01;35m[K^[m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kdeclared here
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:412:31:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  412 |             int length=strlen([01;35m[Knewclasses[m[K);
+      |                               [01;35m[K^~~~~~~~~~[m[K
+      |                               [01;35m[K|[m[K
+      |                               [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:422:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  422 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:437:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  437 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:464:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  464 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o runclear[K
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KinitializeBuffer[m[K’:
+[01m[Kmain.c:145:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Kbuffer[m[K’ will return size of ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  145 |     if (row >= 0 && row < sizeof[01;35m[K([m[Kbuffer) / sizeof(buffer[0]) &&
+      |                                 [01;35m[K^[m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kdeclared here
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:412:31:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  412 |             int length=strlen([01;35m[Knewclasses[m[K);
+      |                               [01;35m[K^~~~~~~~~~[m[K
+      |                               [01;35m[K|[m[K
+      |                               [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:422:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  422 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:437:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  437 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:464:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  464 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KinitializeBuffer[m[K’:
+[01m[Kmain.c:145:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Kbuffer[m[K’ will return size of ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  145 |     if (row >= 0 && row < sizeof[01;35m[K([m[Kbuffer) / sizeof(buffer[0]) &&
+      |                                 [01;35m[K^[m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kdeclared here
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:412:31:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  412 |             int length=strlen([01;35m[Knewclasses[m[K);
+      |                               [01;35m[K^~~~~~~~~~[m[K
+      |                               [01;35m[K|[m[K
+      |                               [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:415:34:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KinitializeBuffer[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  415 |                 initializeBuffer([01;35m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                  [01;35m[K^~~~~~~~~~[m[K
+      |                                  [01;35m[K|[m[K
+      |                                  [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar (*)[1000][m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:422:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  422 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:423:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KinitializeBuffer[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  423 |                     initializeBuffer([01;35m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                      [01;35m[K^~~~~~~~~~[m[K
+      |                                      [01;35m[K|[m[K
+      |                                      [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar (*)[1000][m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:437:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  437 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:438:42:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KinitializeBuffer[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  438 |                         initializeBuffer([01;35m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                          [01;35m[K^~~~~~~~~~[m[K
+      |                                          [01;35m[K|[m[K
+      |                                          [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar (*)[1000][m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:464:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  464 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o runclear[K
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KinitializeBuffer[m[K’:
+[01m[Kmain.c:145:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Kbuffer[m[K’ will return size of ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  145 |     if (row >= 0 && row < sizeof[01;35m[K([m[Kbuffer) / sizeof(buffer[0]) &&
+      |                                 [01;35m[K^[m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kdeclared here
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:412:31:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  412 |             int length=strlen([01;35m[Knewclasses[m[K);
+      |                               [01;35m[K^~~~~~~~~~[m[K
+      |                               [01;35m[K|[m[K
+      |                               [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:415:34:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KinitializeBuffer[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  415 |                 initializeBuffer([01;35m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                  [01;35m[K^~~~~~~~~~[m[K
+      |                                  [01;35m[K|[m[K
+      |                                  [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar (*)[1000][m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:422:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  422 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:423:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KinitializeBuffer[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  423 |                     initializeBuffer([01;35m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                      [01;35m[K^~~~~~~~~~[m[K
+      |                                      [01;35m[K|[m[K
+      |                                      [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar (*)[1000][m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:437:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  437 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:438:42:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KinitializeBuffer[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  438 |                         initializeBuffer([01;35m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                          [01;35m[K^~~~~~~~~~[m[K
+      |                                          [01;35m[K|[m[K
+      |                                          [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar (*)[1000][m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:464:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  464 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KinitializeBuffer[m[K’:
+[01m[Kmain.c:145:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Kbuffer[m[K’ will return size of ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  145 |     if (row >= 0 && row < sizeof[01;35m[K([m[Kbuffer) / sizeof(buffer[0]) &&
+      |                                 [01;35m[K^[m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kdeclared here
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:425:34:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KinitializeBuffer[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  425 |                 initializeBuffer([01;35m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                  [01;35m[K^~~~~~~~~~[m[K
+      |                                  [01;35m[K|[m[K
+      |                                  [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar (*)[1000][m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:432:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  432 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:433:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KinitializeBuffer[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  433 |                     initializeBuffer([01;35m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                      [01;35m[K^~~~~~~~~~[m[K
+      |                                      [01;35m[K|[m[K
+      |                                      [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar (*)[1000][m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:447:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  447 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:448:42:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KinitializeBuffer[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  448 |                         initializeBuffer([01;35m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                          [01;35m[K^~~~~~~~~~[m[K
+      |                                          [01;35m[K|[m[K
+      |                                          [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar (*)[1000][m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:474:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  474 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KinitializeBuffer[m[K’:
+[01m[Kmain.c:145:33:[m[K [01;35m[Kwarning: [m[K‘[01m[Ksizeof[m[K’ on array function parameter ‘[01m[Kbuffer[m[K’ will return size of ‘[01m[Kchar (*)[1000][m[K’ [[01;35m[K-Wsizeof-array-argument[m[K]
+  145 |     if (row >= 0 && row < sizeof[01;35m[K([m[Kbuffer) / sizeof(buffer[0]) &&
+      |                                 [01;35m[K^[m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kdeclared here
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:425:34:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KinitializeBuffer[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  425 |                 initializeBuffer([01;35m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                  [01;35m[K^~~~~~~~~~[m[K
+      |                                  [01;35m[K|[m[K
+      |                                  [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar (*)[1000][m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:432:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  432 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:433:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KinitializeBuffer[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  433 |                     initializeBuffer([01;35m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                      [01;35m[K^~~~~~~~~~[m[K
+      |                                      [01;35m[K|[m[K
+      |                                      [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar (*)[1000][m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:447:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  447 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:448:42:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KinitializeBuffer[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  448 |                         initializeBuffer([01;35m[Knewclasses[m[K, scount, subcount, charValue);
+      |                                          [01;35m[K^~~~~~~~~~[m[K
+      |                                          [01;35m[K|[m[K
+      |                                          [01;35m[Kchar (*)[1000][1000][m[K
+[01m[Kmain.c:144:28:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kchar (*)[1000][m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  144 | void initializeBuffer([01;36m[Kchar buffer[][MAX][m[K, int row, int column, char ch) {
+      |                       [01;36m[K~~~~~^~~~~~~~~~~~~[m[K
+[01m[Kmain.c:474:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  474 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:432:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  432 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:447:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  447 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:474:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  474 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:432:35:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  432 |                     length=strlen([01;35m[Knewclasses[m[K);
+      |                                   [01;35m[K^~~~~~~~~~[m[K
+      |                                   [01;35m[K|[m[K
+      |                                   [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:447:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kstrlen[m[K’ from incompatible pointer type [[01;35m[K-Wincompatible-pointer-types[m[K]
+  447 |                         length=strlen([01;35m[Knewclasses[m[K);
+      |                                       [01;35m[K^~~~~~~~~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kchar (*)[1000][1000][m[K
+In file included from [01m[Kmain.c:12[m[K:
+[01m[K/usr/include/string.h:385:35:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kconst char *[m[K’ but argument is of type ‘[01m[Kchar (*)[1000][1000][m[K’
+  385 | extern size_t strlen ([01;36m[Kconst char *__s[m[K)
+      |                       [01;36m[K~~~~~~~~~~~~^~~[m[K
+[01m[Kmain.c:474:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  474 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o runclear[K
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:474:26:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 2 has type ‘[01m[Kchar (*)[1000][1000][m[K’ [[01;35m[K-Wformat=[m[K]
+  474 |     printf("newclasses: [01;35m[K%s[m[K\n",[32m[Knewclasses[m[K);
+      |                         [01;35m[K~^[m[K    [32m[K~~~~~~~~~~[m[K
+      |                          [01;35m[K|[m[K    [32m[K|[m[K
+      |                          [01;35m[K|[m[K    [32m[Kchar (*)[1000][1000][m[K
+      |                          [01;35m[Kchar *[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ][Kgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o runclear[Kgcc main.c -o runclear[Kgcc main.c -o runclear[Kgcc main.c -o runclear[Kgcc main.c -o runclear[K\[K[K[K[K[K[K./run DFSM.txt string.txt [K
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+newclasses[0][0]: 1
+newclasses[0][1]: 1
+newclasses[0][2]: 1
+newclasses[0][3]: 
+newclasses[0][4]: 
+newclasses[0][5]: 
+newclasses[0][6]: 
+newclasses[1][0]: 
+newclasses[1][1]: 
+newclasses[1][2]: 
+newclasses[1][3]: 2
+newclasses[1][4]: 
+newclasses[1][5]: 
+newclasses[1][6]: 
+newclasses[2][0]: 
+newclasses[2][1]: 
+newclasses[2][2]: 
+newclasses[2][3]: 
+newclasses[2][4]: 
+newclasses[2][5]: 
+newclasses[2][6]: 
+newclasses[3][0]: 
+newclasses[3][1]: 
+newclasses[3][2]: 
+newclasses[3][3]: 
+newclasses[3][4]: 4
+newclasses[3][5]: 
+newclasses[3][6]: 
+newclasses[4][0]: 
+newclasses[4][1]: 
+newclasses[4][2]: 
+newclasses[4][3]: 
+newclasses[4][4]: 
+newclasses[4][5]: 
+newclasses[4][6]: 
+newclasses[5][0]: 
+newclasses[5][1]: 
+newclasses[5][2]: 
+newclasses[5][3]: 
+newclasses[5][4]: 
+newclasses[5][5]: 6
+newclasses[5][6]: 6
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+appended:
+appended:1
+appended:13
+appended:13
+appended:135
+appended:135
+appended:135
+appended:1352
+appended:1352
+appended:1352
+appended:1352
+appended:1352
+appended:13524
+appended:13524
+appended:13524
+appended:1352466
+newclasses[0][0]: 1
+newclasses[0][1]: 1
+newclasses[0][2]: 1
+newclasses[0][3]: 
+newclasses[0][4]: 
+newclasses[0][5]: 
+newclasses[0][6]: 
+newclasses[1][0]: 
+newclasses[1][1]: 
+newclasses[1][2]: 
+newclasses[1][3]: 2
+newclasses[1][4]: 
+newclasses[1][5]: 
+newclasses[1][6]: 
+newclasses[2][0]: 
+newclasses[2][1]: 
+newclasses[2][2]: 
+newclasses[2][3]: 
+newclasses[2][4]: 
+newclasses[2][5]: 
+newclasses[2][6]: 
+newclasses[3][0]: 
+newclasses[3][1]: 
+newclasses[3][2]: 
+newclasses[3][3]: 
+newclasses[3][4]: 4
+newclasses[3][5]: 
+newclasses[3][6]: 
+newclasses[4][0]: 
+newclasses[4][1]: 
+newclasses[4][2]: 
+newclasses[4][3]: 
+newclasses[4][4]: 
+newclasses[4][5]: 
+newclasses[4][6]: 
+newclasses[5][0]: 
+newclasses[5][1]: 
+newclasses[5][2]: 
+newclasses[5][3]: 
+newclasses[5][4]: 
+newclasses[5][5]: 6
+newclasses[5][6]: 6
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt[8Pgcc main.c -o run
+[01m[Kmain.c:460:2:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[Kreturn[m[K’
+  460 |  [01;31m[Kreturn[m[K 0;
+      |  [01;31m[K^~~~~~[m[K
+[01m[Kmain.c:461:1:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[K}[m[K’ token
+  461 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt[8Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run./run DFSM.txt string.txt
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txtclear[K
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear./run DFSM.txt string.txtclear[Kgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:418:38:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar *[m[K’, but argument 4 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+  418 |         printf("newclasses[%d][%d]: [01;35m[K%s[m[K\n", i, j, [32m[Knewclasses[i][j][m[K);
+      |                                     [01;35m[K~^[m[K           [32m[K~~~~~~~~~~~~~~~~[m[K
+      |                                      [01;35m[K|[m[K                        [32m[K|[m[K
+      |                                      [01;35m[Kchar *[m[K                   [32m[Kint[m[K
+      |                                     [32m[K%d[m[K
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o runclear[K./run DFSM.txt string.txtclear[Kgcc main.c -o run
+[01m[Kmain.c:437:2:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[Kreturn[m[K’
+  437 |  [01;31m[Kreturn[m[K 0;
+      |  [01;31m[K^~~~~~[m[K
+[01m[Kmain.c:438:1:[m[K [01;31m[Kerror: [m[Kexpected identifier or ‘[01m[K([m[K’ before ‘[01m[K}[m[K’ token
+  438 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o runclear[K
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o runclear[K./run DFSM.txt string.txt
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+buffer[1]:2=alphalength:2
+buffer[2]:2=alphalength:2
+V=0
+A: 24
+KA: 1356
+no reach: 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ exit
+
+Script done on 2023-10-02 04:23:19+00:00 [COMMAND_EXIT_CODE="0"]
