@@ -15,7 +15,7 @@ Description:
 
 #define MAX 1000
 char buffer[MAX][MAX],string[MAX],statenum,sbuff[MAX][MAX],newclasses[MAX][MAX],KA[1000],A[1000],noreach[1000],appendednum[MAX],notreachable[MAX];
-int buffindex=0,DFSM=1,position=-1,found,stringlength=0,sindex=0,scount=0,subcount=0,alphalength,visited[MAX] = {0};
+int buffindex=0,DFSM=1,position=-1,found,stringlength=0,sindex=0,scount=0,subcount=0,alphalength,marked[MAX] = {0};
 
 
 //function to verify the alphabet is present and return the position for use of logic
@@ -35,13 +35,13 @@ int Verify_and_store_alphabet_position(const char *buffer, char target)
 
 }
 
-void markReachableStates(int currentState, int* visited, int numStates,int symbol) {
-    visited[currentState] = 1;
+void markReachableStates(int currentState, int* marked, int numStates,int symbol) {
+    marked[currentState] = 1;
 
     for (int i = 0; i < symbol; i++) {
         int nextState = buffer[currentState][i] - '0'; 
-        if (nextState >= 1 && nextState <= numStates && !visited[nextState]) {
-            markReachableStates(nextState, visited, numStates,symbol);
+        if (nextState >= 1 && nextState <= numStates && !marked[nextState]) {
+            markReachableStates(nextState, marked, numStates,symbol);
         }
     }
 }
@@ -125,32 +125,6 @@ void appendToAorKA(int x) {
 
     
 }
-
-
-void checkfornotreachablestate(char x)
-{
-    int f=0;
-    for(int i=1;i<buffindex-1;i++)
-    {
-       
-            if (strchr(buffer[i],x))
-            {
-                f=1;
-                //printf(" f=%d for i=%d\n",f,i);
-            }
-            else{
-                //printf(" f=%d for i=%d\n",f,i);
-            }
-    
-    }
-
-    if(f==0)
-    {
-        appendChar(noreach,x);
-    }
-}
-
-
 
 
 
@@ -377,31 +351,22 @@ int main(int argc, char *argv[])
 
 
     // Start DFS from the initial state.
-    markReachableStates(1, visited, buffindex-2,alphalength);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
+    markReachableStates(1, marked, buffindex-2,alphalength);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
 
     // Printing the unreachable states
     printf("Unreachable states: ");
     for (int i = 1; i <= buffindex-2; i++) 
     {   // Using 1-based indexing loop
-        if (!visited[i]) {
-            appendChar(notreachable,i+'0');
+        if (!marked[i]) {
+            appendChar(noreach,i+'0');
         }
     }
-    for(int i=0;i<strlen(notreachable);i++)
+    for(int i=0;i<strlen(noreach);i++)
     {
-        printf(" %c",notreachable[i]);
+        printf(" %c",noreach[i]);
     }
     printf("\n");
 
-
-
-
-    for(int i=2;i<buffindex-1;i++)
-    {
-        char char_i = i + '0';
-        checkfornotreachablestate(char_i);
-        //printf(" %c\n",char_i);
-    }
     
 
     //append to A or KA
@@ -560,21 +525,6 @@ int main(int argc, char *argv[])
     }
 
     }
-
-
-
-
-
-    
-         
-
-
-
-
-
-
-
-    
 
 //end of first else 
 	}
