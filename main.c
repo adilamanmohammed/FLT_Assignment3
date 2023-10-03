@@ -10,12 +10,9 @@ Description:
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-#include <stdbool.h>
-
-
 #define MAX 1000
 char buffer[MAX][MAX],string[MAX],statenum,sbuff[MAX][MAX],newclasses[MAX][MAX],KA[1000],A[1000],noreach[1000],appendednum[MAX],notreachable[MAX];
-int buffindex=0,DFSM=1,position=-1,found,stringlength=0,sindex=0,scount=0,subcount=0,alphalength,marked[MAX] = {0};
+int buffindex=0,DFSM=1,position=-1,found,sindex=0,scount=0,subcount=0,alphalength,marked[MAX] = {0};
 
 
 //function to verify the alphabet is present and return the position for use of logic
@@ -35,18 +32,19 @@ int Verify_and_store_alphabet_position(const char *buffer, char target)
 
 }
 
-void markReachableStates(int currentState, int* marked, int numStates,int symbol) {
+//used to flag the states which are reachable
+void mark_state_which_are_reachable(int currentState, int* marked, int numStates,int symbol) {
     marked[currentState] = 1;
 
     for (int i = 0; i < symbol; i++) {
         int nextState = buffer[currentState][i] - '0'; 
         if (nextState >= 1 && nextState <= numStates && !marked[nextState]) {
-            markReachableStates(nextState, marked, numStates,symbol);
+            mark_state_which_are_reachable(nextState, marked, numStates,symbol);
         }
     }
 }
 
-
+//check if the string belongs to which equivalence_state
 int belongs_to_which_equivalence_state(const char *string)
 {
     int DFSM=1;
@@ -56,7 +54,7 @@ int belongs_to_which_equivalence_state(const char *string)
     {
         int position =Verify_and_store_alphabet_position(buffer[0],string[i]);
         statenum=buffer[DFSM][position];
-        //covert character to integer and intialize to DFSM
+        //coverting character to integer and intialize to DFSM
         DFSM=statenum-'0';
 
     }
@@ -64,7 +62,7 @@ int belongs_to_which_equivalence_state(const char *string)
 
 }
 
-void save_into_group(const char *string, char groupnum)
+void savegroup(const char *string, char groupnum)
 {
     char filename[1000];  // Adjust the size according to your needs
     sprintf(filename, "group_%d.txt", groupnum);
@@ -79,7 +77,7 @@ void save_into_group(const char *string, char groupnum)
     fclose(file);
 }
 
-void appendChar(char newclasses[], char ch) {
+void append_character(char newclasses[], char ch) {
     // Find the null-terminator in the newclasses array
     int len = strlen(newclasses);
 
@@ -90,23 +88,12 @@ void appendChar(char newclasses[], char ch) {
     newclasses[len + 1] = '\0';
 }
 
-int isValueInArray(const char *array, char value) {
-    int len = strlen(array);
 
-    for (int i = 0; i < len; i++) {
-        if (array[i] == value) {
-            return 1; // Value found in the array, return 1 as a flag
-        }
-    }
-
-    return 0; // Value not found in the array, return 0 as a flag
-}
-
-
-
+// Checking if x is present in buffer[buffindex-1]
 void appendToAorKA(int x) {
-    // Check if x is present in buffer[buffindex-1]
-    char x_char = x + '0'; // Convert integer x to character
+
+    // Convert integer x to character
+    char x_char = x + '0'; 
     int found = 0;
 
     for (int i = 0; buffer[buffindex - 1][i] != '\0'; i++) {
@@ -128,10 +115,11 @@ void appendToAorKA(int x) {
 
 
 
-int isCharacterPresent(const char *array, char target) {
+int find_character_present_in_array(const char *array, char target) {
     while (*array != '\0') {
         if (*array == target) {
-            return 1; // Character found in the array
+            // Character found in the array
+            return 1; 
         }
         array++;
     }
@@ -147,7 +135,7 @@ int checkgroup(int character) {
 
     for(int i=0;i<scount;i++)
     {
-        if(isCharacterPresent(newclasses[i],A)==1)
+        if(find_character_present_in_array(newclasses[i],A)==1)
         {
             return i;
             break;
@@ -155,9 +143,6 @@ int checkgroup(int character) {
     }
     
 }
-
-
-
 
 
 //main function
@@ -178,11 +163,9 @@ int main(int argc, char *argv[])
     FILE *file1 = fopen(argv[1], "r");
     if (file1 == NULL) 
     {
-        perror("Check with string.txt Error opening the file");
+        perror("Check with DFSM.txt Error opening the file");
         return 1;
     }
-
-    
 
     //Read lines and store non-empty lines (excluding lines with only spaces)
     while (fgets(buffer[buffindex], MAX, file1)) {
@@ -207,30 +190,28 @@ int main(int argc, char *argv[])
     fclose(file1);
 
     //printing the buffer index
-    printf("bufferindex:%d\n\n",buffindex);
+    //printf("bufferindex:%d\n\n",buffindex);
 
 
     //printing the stored non-empty lines
-    for (int i = 0; i < buffindex; i++) {
+    /*for (int i = 0; i < buffindex; i++) {
        printf("buffer[%d]: %s\n", i, buffer[i]);
-    }
+    }*/
 
     //aphalet Length defining
     int alphalength=strlen(buffer[0]);
-    printf("alphalength:%d\n\n",alphalength);
+    //printf("alphalength:%d\n\n",alphalength);
 
 
     //accessing the buffer
     //printf("\nseparate :%c\n",buffer[2][0]);
 
- 
+    
     int finalstatelength= strlen(buffer[buffindex-1]);
+    //debug
+    //printf("final state: %s\t FSlength :%d FSarrayIndex:%d\n ",buffer[buffindex-1],finalstatelength,buffindex-1);
 
-    printf("final state: %s\t FSlength :%d FSarrayIndex:%d\n ",buffer[buffindex-1],finalstatelength,buffindex-1);
-
-
-	
-    // Open the second text file string.txt for reading
+    //Opening the second text file string.txt for reading
     FILE *file2 = fopen(argv[2], "r");
     if (file2 == NULL) 
     {
@@ -238,7 +219,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    //store list of strings
+    //storing list of strings in sbuff
     while (fgets(sbuff[sindex], MAX, file2)) {
         int length = strlen(sbuff[sindex]);
 
@@ -257,10 +238,10 @@ int main(int argc, char *argv[])
         }
     }
 
-    for (int i = 0; i < sindex; i++) {
+    /*for(int i = 0; i < sindex; i++) {
        printf("sbuff[%d]: %s\n", i, sbuff[i]);
-    }
-    printf("Sindex=%d \n\n",sindex);
+    }*/
+    //printf("Sindex=%d \n\n",sindex);
 
 
     // Close the first text file
@@ -284,11 +265,11 @@ int main(int argc, char *argv[])
         }
     }
 	
-    printf("V=%d\n",V); //V is a flag to indicate that the given transition is invalid	
+    //printf("V=%d\n",V); //V is a flag to indicate that the given transition is invalid	
 
 
 
-    //<<<<<<<<<<<<<<<<<<<<<<<<<<<<DFSM Logic>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+    //<<<<<<<<<<<<<<<<<<<<<<<<<<<<Logic to check DFSM is valid>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 	if(sindex==0)
 	{
@@ -350,22 +331,24 @@ int main(int argc, char *argv[])
     //removing not reachable states from sate 2 to last state
 
 
-    // Start DFS from the initial state.
-    markReachableStates(1, marked, buffindex-2,alphalength);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
+    //Doing DFS from state 1 and removing not reachable states from sate 2 to last state
+    mark_state_which_are_reachable(1, marked, buffindex-2,alphalength);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
 
     // Printing the unreachable states
-    printf("Unreachable states: ");
     for (int i = 1; i <= buffindex-2; i++) 
     {   // Using 1-based indexing loop
         if (!marked[i]) {
-            appendChar(noreach,i+'0');
+            append_character(noreach,i+'0');
         }
     }
-    for(int i=0;i<strlen(noreach);i++)
+
+    //debug norech
+    //printf("Unreachable states: ");
+    /*for(int i=0;i<strlen(noreach);i++)
     {
         printf(" %c",noreach[i]);
     }
-    printf("\n");
+    printf("\n");*/
 
     
 
@@ -381,26 +364,26 @@ int main(int argc, char *argv[])
         else
         appendToAorKA(i);
     }
-    // Print A and KA
-    printf("A: %s\n", A);
-    printf("KA: %s\n", KA);
-    printf("no reach: %s\n\n", noreach);
+    //Print A and KA
+    //printf("A: %s\n", A);
+    //printf("KA: %s\n", KA);
+    //printf("no reach: %s\n\n", noreach);
 
-    printf("for non final:\n");
+    //printf("for non final:\n");
     //check and make eqivalence states for non final logic
     for(int i=1;i<buffindex-1;i++)
     {   subcount=0;
-        int infinal=isCharacterPresent(A,i+'0');
-        int flag=isCharacterPresent(appendednum,i+'0');
-        int noreachflag=isCharacterPresent(noreach,i+'0');
+        int infinal=find_character_present_in_array(A,i+'0');
+        int flag=find_character_present_in_array(appendednum,i+'0');
+        int noreachflag=find_character_present_in_array(noreach,i+'0');
         if(flag==1 || infinal==1 || noreachflag==1)
         {
-            printf("skip@%d\n",i);
+            //printf("skip@%d\n",i);
         }
         else if(i==buffindex-2)
         {
             newclasses[scount][subcount]=i+'0';
-            appendChar(appendednum,i+'0');
+            append_character(appendednum,i+'0');
             //printf("newclass[%d][%d]=%c\n",scount,subcount,i+'0');
             scount++;
         }
@@ -411,7 +394,7 @@ int main(int argc, char *argv[])
             if(len==0)
             {
                 newclasses[scount][subcount]=i+'0';
-                appendChar(appendednum,i+'0');
+                append_character(appendednum,i+'0');
                 tflag++;
                 subcount++;
             }
@@ -419,20 +402,20 @@ int main(int argc, char *argv[])
             for(int j=i+1;j<buffindex-1;j++)
             {
                 
-                int finalflag=isCharacterPresent(A,j+'0');
+                int finalflag=find_character_present_in_array(A,j+'0');
                 if(finalflag!=1)
                 {
                     int compare=strcmp(buffer[i],buffer[j]);
                     if(compare==0)
                     {
                         newclasses[scount][subcount]=j+'0';
-                        appendChar(appendednum,j+'0');
+                        append_character(appendednum,j+'0');
                         tflag++;
                         subcount++;
                     }
                 }
                     
-                //}
+                
             }
 
             if(tflag!=0)
@@ -446,21 +429,22 @@ int main(int argc, char *argv[])
 
 
 
-    printf("for final states:\n");
+    //printf("for final states:\n");
     //check and make eqivalence states for non final logic
     for(int i=1;i<buffindex-1;i++)
     {   subcount=0;
-        int innonfinal=isCharacterPresent(KA,i+'0');
-        int flag=isCharacterPresent(appendednum,i+'0');
-        int noreachflag=isCharacterPresent(noreach,i+'0');
-        if(flag==1 || innonfinal==1 || noreachflag==1)
+        int in_non_final=find_character_present_in_array(KA,i+'0');
+        int flag=find_character_present_in_array(appendednum,i+'0');
+        int noreachflag=find_character_present_in_array(noreach,i+'0');
+        if(flag==1 || in_non_final==1 || noreachflag==1)
         {
-            printf("skip@%d\n",i);
+            //skip if not in appended or in in final or if in no reach
+            //printf("skip@%d\n",i);
         }
         else if(i==buffindex-2)
         {
             newclasses[scount][subcount]=i+'0';
-            appendChar(appendednum,i+'0');
+            append_character(appendednum,i+'0');
             //printf("newclass[%d][%d]=%c\n",scount,subcount,i+'0');
         }
         else
@@ -470,27 +454,27 @@ int main(int argc, char *argv[])
             if(len==0)
             {
                 newclasses[scount][subcount]=i+'0';
-                appendChar(appendednum,i+'0');
+                append_character(appendednum,i+'0');
                 tflag++;
                 subcount++;
             }
             
             for(int j=i+1;j<buffindex-1;j++)
             {
-                int nonfinalflag=isCharacterPresent(KA,j+'0');
+                int nonfinalflag=find_character_present_in_array(KA,j+'0');
                 if(nonfinalflag!=1)
                 {
                     int compare=strcmp(buffer[i],buffer[j]);
                     if(compare==0)
                     {
                         newclasses[scount][subcount]=j+'0';
-                        appendChar(appendednum,j+'0');
+                        append_character(appendednum,j+'0');
                         tflag++;
                         subcount++;
                     }
                 }
                     
-                //}
+                
             }
 
             if(tflag!=0)
@@ -503,24 +487,25 @@ int main(int argc, char *argv[])
     }
 
 
-    printf("\n");
+    //printf("\n");
    //check debug loop
+    printf("These are the new equivalence states:\n");
     for (int i = 0; i < scount; i++) {
        printf("newclasses[%d]: %s\n", i+1, newclasses[i]);
     }
-
-   
-    printf("append: %s\n",appendednum);
-    printf("scount: %d\n\n",scount);
+    printf("Note: With respect to above state-numbers group numbers are given\n");
+    //debug
+    //printf("append: %s\n",appendednum);
+    //printf("scount: %d\n\n",scount);
 
 
     //check strings.txt and check each string belongs to which group
     for(int i=0;i<sindex;i++)
     {
         int class_state=belongs_to_which_equivalence_state(sbuff[i]);
-        int check_in_which_group=checkgroup(class_state);
-        printf("%s belongs : %d , and final is %d\n",sbuff[i], class_state,check_in_which_group);
-        save_into_group(sbuff[i],check_in_which_group+1);
+        int check=checkgroup(class_state);
+        //printf("%s belongs : %d , and final is %d\n",sbuff[i], class_state,check);
+        savegroup(sbuff[i],check+1);
 
     }
 
@@ -530,4 +515,3 @@ int main(int argc, char *argv[])
 	}
 	return 0;
 }
-
