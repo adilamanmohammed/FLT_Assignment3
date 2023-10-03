@@ -3,7 +3,7 @@ Name : Adil Aman Mohammed
 Course : Formal language theory
 Assignment no: 3
 CWID : A20395630
-Description:
+Description: The following code is logic for implementing the Minimization of DFSM and finding the equivalence classes then grouping the given strings.
 */
 
 
