@@ -1,0 +1,611 @@
+Script started on 2023-10-03 06:37:09+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="159" LINES="25"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./out gcc sample.c -o out
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [K[K[K[K[K[K[Kgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run[1P[1P[1P[1P[1@p[1@r[1@o[1@g[1@3
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt sr[Ktring.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babaa
+sbuff[3]: babab
+sbuff[4]: bababb
+sbuff[5]: bab
+Sindex=6 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+append: 1234
+scount: 4
+
+aab belongs : 1 , and final is 0
+aba belongs : 4 , and final is 3
+babaa belongs : 4 , and final is 3
+babab belongs : 1 , and final is 0
+bababb belongs : 1 , and final is 0
+bab belongs : 3 , and final is 2
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babaa
+sbuff[3]: babab
+sbuff[4]: bababb
+sbuff[5]: bab
+Sindex=6 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+append: 1234
+scount: 4
+
+aab belongs : 1 , and final is 0
+aba belongs : 4 , and final is 3
+babaa belongs : 4 , and final is 3
+babab belongs : 1 , and final is 0
+bababb belongs : 1 , and final is 0
+bab belongs : 3 , and final is 2
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babaa
+sbuff[3]: babab
+sbuff[4]: bababb
+sbuff[5]: bab
+Sindex=6 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babaa
+sbuff[3]: babab
+sbuff[4]: bababb
+sbuff[5]: bab
+Sindex=6 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+
+With respect to above state numbers group names are given
+ group files are created successfully 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babaa
+sbuff[3]: babab
+sbuff[4]: bababb
+sbuff[5]: bab
+Sindex=6 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+
+With respect to above state numbers group names are given
+Group files are created successfully 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babaa
+sbuff[3]: babab
+sbuff[4]: bababb
+sbuff[5]: bab
+Sindex=6 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+With respect to above state numbers group names are given
+Group files are created successfully 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babaa
+sbuff[3]: babab
+sbuff[4]: bababb
+sbuff[5]: bab
+Sindex=6 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+note : With respect to above state numbers group names are given
+Group files are created successfully 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babaa
+sbuff[3]: babab
+sbuff[4]: bababb
+sbuff[5]: bab
+Sindex=6 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+note : With respect to above state numbers group names are given
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babaa
+sbuff[3]: babab
+sbuff[4]: bababb
+sbuff[5]: bab
+Sindex=6 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+Note: With respect to above state numbers group names are given
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babaa
+sbuff[3]: babab
+sbuff[4]: bababb
+sbuff[5]: bab
+Sindex=6 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+Note: With respect to above state numbers group names are given
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babaa
+sbuff[3]: babab
+sbuff[4]: bababb
+sbuff[5]: bab
+Sindex=6 
+
+V=0
+Unreachable states:  5 6 7 8
+for final states:
+
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+Note: With respect to above state numbers group names are given
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+Sindex=6 
+
+Unreachable states:  5 6 7 8
+for final states:
+
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+Note: With respect to above state numbers group names are given
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+Note: With respect to above state numbers group names are given
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+Note: With respect to above state numbers group names are given
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [8Pgcc prog3.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc prog3.c -o run./run DFSM.txt string.txt 
+These are the new equivalence states:
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+Note: With respect to above state-numbers group numbers are given
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ exit
+
+Script done on 2023-10-03 06:58:01+00:00 [COMMAND_EXIT_CODE="0"]
