@@ -1,9 +1,8 @@
 Name : Adil Aman Mohammed
 Course : Formal language theory
-Assignment no: 2
+Assignment no: 3
 CWID : A20395630
-Description: The following code is logif for DFSM to Regular Expression Logic which converts the given DFSM to Regular Expressions.
-
+Description: The following code is logic for implementing the Minimization of DFSM and finding the equivalence classes then grouping the given strings
 
 Input files:
 
@@ -22,8 +21,8 @@ Note: The space between characters may be a single space or multiple spaces. Cod
 
 1) To complie the code use the below command:
 	
-	gcc prog2.c -o run
+	gcc prog3.c -o run
 
 2) To run the code and give the input file names in command line use the below command:
 
-	./run DFSM.txt
+	./run DFSM.txt string.txt
