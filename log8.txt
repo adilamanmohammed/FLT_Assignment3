@@ -1,0 +1,788 @@
+Script started on 2023-10-03 03:48:39+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="218" LINES="13"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./out gcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out./out [Kgcc sample.c -o out[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmain.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:543:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kvisited[m[K’ undeclared (first use in this function)
+  543 | markReachableStates(1, [01;31m[Kvisited[m[K, stateCount);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
+      |                        [01;31m[K^~~~~~~[m[K
+[01m[Kmain.c:543:24:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:543:33:[m[K [01;31m[Kerror: [m[K‘[01m[KstateCount[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kstatenum[m[K’?
+  543 | markReachableStates(1, visited, [01;31m[KstateCount[m[K);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
+      |                                 [01;31m[K^~~~~~~~~~[m[K
+      |                                 [32m[Kstatenum[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:548:33:[m[K [01;31m[Kerror: [m[K‘[01m[KstateCount[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kstatenum[m[K’?
+  548 | markReachableStates(1, visited, [01;31m[KstateCount[m[K);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
+      |                                 [01;31m[K^~~~~~~~~~[m[K
+      |                                 [32m[Kstatenum[m[K
+[01m[Kmain.c:548:33:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run[11P./out gcc sample.c -o out./out [K[K[K[K[Krun DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+Sindex=4 
+
+V=0
+A: 4
+KA: 123567
+no reach: 8
+
+for non final:
+skip@4
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 5
+newclasses[5]: 6
+newclasses[6]: 7
+newclasses[7]: 4
+append: 1235674
+scount: 7
+
+aab belongs : 1 , and final is 0
+ba belongs : 2 , and final is 1
+bb belongs : 1 , and final is 0
+abb belongs : 2 , and final is 1
+Unreachable states: 2 3 4 5 6 7 8 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+Sindex=4 
+
+V=0
+A: 4
+KA: 123567
+no reach: 8
+
+for non final:
+skip@4
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 5
+newclasses[5]: 6
+newclasses[6]: 7
+newclasses[7]: 4
+append: 1235674
+scount: 7
+
+aab belongs : 1 , and final is 0
+ba belongs : 2 , and final is 1
+bb belongs : 1 , and final is 0
+abb belongs : 2 , and final is 1
+Unreachable states: 2 3 4 5 6 7 8 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+Sindex=4 
+
+V=0
+A: 4
+KA: 123567
+no reach: 8
+
+for non final:
+skip@4
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 5
+newclasses[5]: 6
+newclasses[6]: 7
+newclasses[7]: 4
+append: 1235674
+scount: 7
+
+aab belongs : 1 , and final is 0
+ba belongs : 2 , and final is 1
+bb belongs : 1 , and final is 0
+abb belongs : 2 , and final is 1
+Unreachable states: 2 3 4 5 6 7 8 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run./run DFSM.txt string.txt [9Pgcc main.c -o run./run DFSM.txt string.txt [9Pgcc main.c -o run[11P./out gcc sample.c -o out
+[01m[Ksample.c:[m[K In function ‘[01m[KmarkReachableStates[m[K’:
+[01m[Ksample.c:16:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kalphalength[m[K’ undeclared (first use in this function)
+   16 |     for (int i = 0; i < [01;31m[Kalphalength[m[K; i++) {
+      |                         [01;31m[K^~~~~~~~~~~[m[K
+[01m[Ksample.c:16:25:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Ksample.c:17:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kbuffer[m[K’ undeclared (first use in this function); did you mean ‘[01m[Ksetbuffer[m[K’?
+   17 |         int nextState = [01;31m[Kbuffer[m[K[currentState][i] - '0';
+      |                         [01;31m[K^~~~~~[m[K
+      |                         [32m[Ksetbuffer[m[K
+[01m[Ksample.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Ksample.c:211:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kbuffindex[m[K’ undeclared (first use in this function)
+  211 |     int stateCount=[01;31m[Kbuffindex[m[K-2;
+      |                    [01;31m[K^~~~~~~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc sample.c -o out
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc sample.c -o out./run DFSM.txt string.txt [1P[1P[1P[1@o[1@u[1@t
+Non final states are : 1235678
+Final states are: 4
+Unreachable states: 5 6 7 8 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./out DFSM.txt string.txt [7Pgcc sample.c -o out./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KmarkReachableStates[m[K’:
+[01m[Kmain.c:42:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransition[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kposition[m[K’?
+   42 |         int nextState = [01;31m[Ktransition[m[K[currentState][i] - '0';
+      |                         [01;31m[K^~~~~~~~~~[m[K
+      |                         [32m[Kposition[m[K
+[01m[Kmain.c:42:25:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:44:13:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[KmarkReachableStates[m[K’
+   44 |             [01;31m[KmarkReachableStates[m[K(nextState, visited, numStates);
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:38:6:[m[K [01;36m[Knote: [m[Kdeclared here
+   38 | void [01;36m[KmarkReachableStates[m[K(int currentState, int* visited, int numStates,int symbol) {
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:545:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ undeclared (first use in this function)
+  545 | int stateCount=[01;31m[Kflag[m[K-2;
+      |                [01;31m[K^~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KmarkReachableStates[m[K’:
+[01m[Kmain.c:42:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransition[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kposition[m[K’?
+   42 |         int nextState = [01;31m[Ktransition[m[K[currentState][i] - '0';
+      |                         [01;31m[K^~~~~~~~~~[m[K
+      |                         [32m[Kposition[m[K
+[01m[Kmain.c:42:25:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:44:13:[m[K [01;31m[Kerror: [m[Ktoo few arguments to function ‘[01m[KmarkReachableStates[m[K’
+   44 |             [01;31m[KmarkReachableStates[m[K(nextState, visited, numStates);
+      |             [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:38:6:[m[K [01;36m[Knote: [m[Kdeclared here
+   38 | void [01;36m[KmarkReachableStates[m[K(int currentState, int* visited, int numStates,int symbol) {
+      |      [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:545:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ undeclared (first use in this function)
+  545 | int stateCount=[01;31m[Kflag[m[K-2;
+      |                [01;31m[K^~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KmarkReachableStates[m[K’:
+[01m[Kmain.c:42:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransition[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kposition[m[K’?
+   42 |         int nextState = [01;31m[Ktransition[m[K[currentState][i] - '0';
+      |                         [01;31m[K^~~~~~~~~~[m[K
+      |                         [32m[Kposition[m[K
+[01m[Kmain.c:42:25:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:545:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ undeclared (first use in this function)
+  545 | int stateCount=[01;31m[Kflag[m[K-2;
+      |                [01;31m[K^~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KmarkReachableStates[m[K’:
+[01m[Kmain.c:42:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransition[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kposition[m[K’?
+   42 |         int nextState = [01;31m[Ktransition[m[K[currentState][i] - '0';
+      |                         [01;31m[K^~~~~~~~~~[m[K
+      |                         [32m[Kposition[m[K
+[01m[Kmain.c:42:25:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:545:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ undeclared (first use in this function)
+  545 | int stateCount=[01;31m[Kflag[m[K-2;
+      |                [01;31m[K^~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[KmarkReachableStates[m[K’:
+[01m[Kmain.c:42:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktransition[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kposition[m[K’?
+   42 |         int nextState = [01;31m[Ktransition[m[K[currentState][i] - '0';
+      |                         [01;31m[K^~~~~~~~~~[m[K
+      |                         [32m[Kposition[m[K
+[01m[Kmain.c:42:25:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:545:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ undeclared (first use in this function)
+  545 | int stateCount=[01;31m[Kflag[m[K-2;
+      |                [01;31m[K^~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:545:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kflag[m[K’ undeclared (first use in this function)
+  545 | int stateCount=[01;31m[Kflag[m[K-2;
+      |                [01;31m[K^~~~[m[K
+[01m[Kmain.c:545:16:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o runclear[Kgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o runclear[Kgcc main.c -o run./out DFSM.txt string.txt [7Pgcc sample.c -o out./out DFSM.txt string.txt [7Pgcc sample.c -o out./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+Sindex=4 
+
+V=0
+A: 4
+KA: 123567
+no reach: 8
+
+for non final:
+skip@4
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 5
+newclasses[5]: 6
+newclasses[6]: 7
+newclasses[7]: 4
+append: 1235674
+scount: 7
+
+aab belongs : 1 , and final is 0
+ba belongs : 2 , and final is 1
+bb belongs : 1 , and final is 0
+abb belongs : 2 , and final is 1
+Unreachable states: 5 6 7 8 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:554:22:[m[K [01;31m[Kerror: [m[K‘[01m[KstateCount[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kstatenum[m[K’?
+  554 | for (int i = 1; i <= [01;31m[KstateCount[m[K; i++) {   // Using 1-based indexing loop
+      |                      [01;31m[K^~~~~~~~~~[m[K
+      |                      [32m[Kstatenum[m[K
+[01m[Kmain.c:554:22:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+Sindex=4 
+
+V=0
+A: 4
+KA: 123567
+no reach: 8
+
+for non final:
+skip@4
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 5
+newclasses[5]: 6
+newclasses[6]: 7
+newclasses[7]: 4
+append: 1235674
+scount: 7
+
+aab belongs : 1 , and final is 0
+ba belongs : 2 , and final is 1
+bb belongs : 1 , and final is 0
+abb belongs : 2 , and final is 1
+Unreachable states: 5 6 7 8 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ [K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:381:25:[m[K [01;31m[Kerror: [m[Kexpected declaration specifiers or ‘[01m[K...[m[K’ before numeric constant
+  381 |     markReachableStates([01;31m[K1[m[K, visited, buffindex-2,alphalength);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
+      |                         [01;31m[K^[m[K
+[01m[Kmain.c:381:28:[m[K [01;31m[Kerror: [m[Kexpected declaration specifiers or ‘[01m[K...[m[K’ before ‘[01m[Kvisited[m[K’
+  381 |     markReachableStates(1, [01;31m[Kvisited[m[K, buffindex-2,alphalength);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
+      |                            [01;31m[K^~~~~~~[m[K
+[01m[Kmain.c:381:37:[m[K [01;31m[Kerror: [m[Kexpected declaration specifiers or ‘[01m[K...[m[K’ before ‘[01m[Kbuffindex[m[K’
+  381 |     markReachableStates(1, visited, [01;31m[Kbuffindex[m[K-2,alphalength);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
+      |                                     [01;31m[K^~~~~~~~~[m[K
+[01m[Kmain.c:381:49:[m[K [01;31m[Kerror: [m[Kexpected declaration specifiers or ‘[01m[K...[m[K’ before ‘[01m[Kalphalength[m[K’
+  381 |     markReachableStates(1, visited, buffindex-2,[01;31m[Kalphalength[m[K);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
+      |                                                 [01;31m[K^~~~~~~~~~~[m[K
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt [9Pgcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+Sindex=4 
+
+V=0
+Unreachable states: 5 6 7 8 
+A: 4
+KA: 123567
+no reach: 8
+
+for non final:
+skip@4
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 5
+newclasses[5]: 6
+newclasses[6]: 7
+newclasses[7]: 4
+append: 1235674
+scount: 7
+
+aab belongs : 1 , and final is 0
+ba belongs : 2 , and final is 1
+bb belongs : 1 , and final is 0
+abb belongs : 2 , and final is 1
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+Sindex=4 
+
+V=0
+Unreachable states: 
+A: 4
+KA: 123567
+no reach: 8
+
+for non final:
+skip@4
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 5
+newclasses[5]: 6
+newclasses[6]: 7
+newclasses[7]: 4
+append: 1235674
+scount: 7
+
+aab belongs : 1 , and final is 0
+ba belongs : 2 , and final is 1
+bb belongs : 1 , and final is 0
+abb belongs : 2 , and final is 1
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:390:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ki[m[K’ undeclared (first use in this function)
+  390 |     for([01;31m[Ki[m[K=0;i<strlen(notreachable);i++)
+      |         [01;31m[K^[m[K
+[01m[Kmain.c:390:9:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+Sindex=4 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123567
+no reach: 8
+
+for non final:
+skip@4
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 5
+newclasses[5]: 6
+newclasses[6]: 7
+newclasses[7]: 4
+append: 1235674
+scount: 7
+
+aab belongs : 1 , and final is 0
+ba belongs : 2 , and final is 1
+bb belongs : 1 , and final is 0
+abb belongs : 2 , and final is 1
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:361:24:[m[K [01;31m[Kerror: [m[K‘[01m[Knotreach[m[K’ undeclared (first use in this function); did you mean ‘[01m[Knoreach[m[K’?
+  361 |             appendChar([01;31m[Knotreach[m[K,i+'0');
+      |                        [01;31m[K^~~~~~~~[m[K
+      |                        [32m[Knoreach[m[K
+[01m[Kmain.c:361:24:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+Sindex=4 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+append: 1234
+scount: 4
+
+aab belongs : 1 , and final is 0
+ba belongs : 2 , and final is 1
+bb belongs : 1 , and final is 0
+abb belongs : 2 , and final is 1
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+Sindex=4 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+append: 1234
+scount: 4
+
+aab belongs : 1 , and final is 0
+ba belongs : 2 , and final is 1
+bb belongs : 1 , and final is 0
+abb belongs : 2 , and final is 1
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babb
+sbuff[3]: babaa
+sbuff[4]: babab
+sbuff[5]: bababb
+sbuff[6]: bab
+Sindex=7 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach: 5678
+
+for non final:
+skip@4
+skip@5
+skip@6
+skip@7
+skip@8
+for final states:
+skip@1
+skip@2
+skip@3
+skip@5
+skip@6
+skip@7
+skip@8
+
+newclasses[1]: 1
+newclasses[2]: 2
+newclasses[3]: 3
+newclasses[4]: 4
+append: 1234
+scount: 4
+
+aab belongs : 1 , and final is 0
+aba belongs : 4 , and final is 3
+babb belongs : 2 , and final is 1
+babaa belongs : 4 , and final is 3
+babab belongs : 1 , and final is 0
+bababb belongs : 1 , and final is 0
+bab belongs : 3 , and final is 2
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt [9Pgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt 
+bufferindex:10
+
+buffer[0]: ab
+buffer[1]: 21
+buffer[2]: 13
+buffer[3]: 42
+buffer[4]: 41
+buffer[5]: 46
+buffer[6]: 75
+buffer[7]: 67
+buffer[8]: 74
+buffer[9]: 4
+alphalength:2
+
+final state: 4	 FSlength :1 FSarrayIndex:9
+ sbuff[0]: aab
+sbuff[1]: aba
+sbuff[2]: babb
+sbuff[3]: babaa
+sbuff[4]: babab
+sbuff[5]: bababb
+sbuff[6]: bab
+Sindex=7 
+
+V=0
+Unreachable states:  5 6 7 8
+A: 4
+KA: 123
+no reach
