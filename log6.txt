@@ -1,0 +1,179 @@
+Script started on 2023-10-02 17:41:55+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="142" LINES="7"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txt
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+V=0
+A: 24
+KA: 1356
+no reach: 
+
+for non final:
+skip@2
+skip@3
+skip@4
+skip@5
+for final states:
+skip@1
+skip@3
+skip@5
+skip@6
+
+newclasses[0]: 135
+newclasses[1]: 6
+newclasses[2]: 2
+newclasses[3]: 4
+append: 135624
+scount: 4
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txtclear[K
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear[Kclear./run DFSM.txt string.txtclear[K
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear./run DFSM.txt string.txtclear[Kgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o runclear[K
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ cleargcc main.c -o runclear[K./run DFSM.txt string.txt
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+
+Sindex=4 
+V=0
+A: 24
+KA: 1356
+no reach: 
+
+for non final:
+skip@2
+skip@3
+skip@4
+skip@5
+for final states:
+skip@1
+skip@3
+skip@5
+skip@6
+
+newclasses[0]: 135
+newclasses[1]: 6
+newclasses[2]: 2
+newclasses[3]: 4
+append: 135624
+scount: 4
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txtclear[K
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ clear./run DFSM.txt string.txt
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+
+Sindex=4 
+V=0
+A: 24
+KA: 1356
+no reach: 
+
+for non final:
+skip@2
+skip@3
+skip@4
+skip@5
+for final states:
+skip@1
+skip@3
+skip@5
+skip@6
+
+newclasses[0]: 135
+newclasses[1]: 6
+newclasses[2]: 2
+newclasses[3]: 4
+append: 135624
+scount: 4
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txtclear[K./run DFSM.txt string.txt
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
+buffer[3]: 24
+buffer[4]: 65
+buffer[5]: 24
+buffer[6]: 66
+buffer[7]: 24
+alphalength:2
+
+final state: 24	 FSlength :2 FSarrayIndex:7
+ sbuff[0]: aab
+sbuff[1]: ba
+sbuff[2]: bb
+sbuff[3]: abb
+
+Sindex=4 
+V=0
+A: 24
+KA: 1356
+no reach: 
+
+for non final:
+skip@2
+skip@3
+skip@4
+skip@5
+for final states:
+skip@1
+skip@3
+skip@5
+skip@6
+
+newclasses[0]: 135
+newclasses[1]: 6
+newclasses[2]: 2
+newclasses[3]: 4
+append: 135624
+scount: 4
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ ./run DFSM.txt string.txtclear[K./run DFSM.txt string.txtclear[Kgcc main.c -o run
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment3 [0;36m([1;31mmain[0;36m) [0m$ gcc main.c -o run./run DFSM.txt string.txt
+bufferindex:8
+
+buffer[0]: ab
+buffer[1]: 24
+buffer[2]: 36
