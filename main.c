@@ -10,10 +10,12 @@ Description:
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include <stdbool.h>
+
 
 #define MAX 1000
-char buffer[MAX][MAX],string[MAX],statenum,sbuff[MAX][MAX],newclasses[MAX][MAX],KA[1000],A[1000],noreach[1000],appendednum[MAX];
-int buffindex=0,DFSM=1,position=-1,found,stringlength=0,sindex=0,scount=0,subcount=0;
+char buffer[MAX][MAX],string[MAX],statenum,sbuff[MAX][MAX],newclasses[MAX][MAX],KA[1000],A[1000],noreach[1000],appendednum[MAX],notreachable[MAX];
+int buffindex=0,DFSM=1,position=-1,found,stringlength=0,sindex=0,scount=0,subcount=0,alphalength,visited[MAX] = {0};
 
 
 //function to verify the alphabet is present and return the position for use of logic
@@ -31,6 +33,17 @@ int Verify_and_store_alphabet_position(const char *buffer, char target)
 	}
 	return position;
 
+}
+
+void markReachableStates(int currentState, int* visited, int numStates,int symbol) {
+    visited[currentState] = 1;
+
+    for (int i = 0; i < symbol; i++) {
+        int nextState = buffer[currentState][i] - '0'; 
+        if (nextState >= 1 && nextState <= numStates && !visited[nextState]) {
+            markReachableStates(nextState, visited, numStates,symbol);
+        }
+    }
 }
 
 
@@ -168,15 +181,6 @@ int checkgroup(int character) {
     }
     
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -370,6 +374,28 @@ int main(int argc, char *argv[])
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<Actual logic >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
     //removing not reachable states from sate 2 to last state
+
+
+    // Start DFS from the initial state.
+    markReachableStates(1, visited, buffindex-2,alphalength);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
+
+    // Printing the unreachable states
+    printf("Unreachable states: ");
+    for (int i = 1; i <= buffindex-2; i++) 
+    {   // Using 1-based indexing loop
+        if (!visited[i]) {
+            appendChar(notreachable,i+'0');
+        }
+    }
+    for(int i=0;i<strlen(notreachable);i++)
+    {
+        printf(" %c",notreachable[i]);
+    }
+    printf("\n");
+
+
+
+
     for(int i=2;i<buffindex-1;i++)
     {
         char char_i = i + '0';
@@ -401,7 +427,8 @@ int main(int argc, char *argv[])
     {   subcount=0;
         int infinal=isCharacterPresent(A,i+'0');
         int flag=isCharacterPresent(appendednum,i+'0');
-        if(flag==1 || infinal==1)
+        int noreachflag=isCharacterPresent(noreach,i+'0');
+        if(flag==1 || infinal==1 || noreachflag==1)
         {
             printf("skip@%d\n",i);
         }
@@ -460,7 +487,8 @@ int main(int argc, char *argv[])
     {   subcount=0;
         int innonfinal=isCharacterPresent(KA,i+'0');
         int flag=isCharacterPresent(appendednum,i+'0');
-        if(flag==1 || innonfinal==1)
+        int noreachflag=isCharacterPresent(noreach,i+'0');
+        if(flag==1 || innonfinal==1 || noreachflag==1)
         {
             printf("skip@%d\n",i);
         }
@@ -513,7 +541,7 @@ int main(int argc, char *argv[])
     printf("\n");
    //check debug loop
     for (int i = 0; i < scount; i++) {
-       printf("newclasses[%d]: %s\n", i, newclasses[i]);
+       printf("newclasses[%d]: %s\n", i+1, newclasses[i]);
     }
 
    
@@ -531,17 +559,22 @@ int main(int argc, char *argv[])
 
     }
 
+    }
+
+
+
 
 
     
+         
 
 
 
 
 
 
-    }
-    	
+
+    
 
 //end of first else 
 	}
