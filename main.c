@@ -11,10 +11,10 @@ Description: The following code is logic for implementing the Minimization of DF
 #include<stdlib.h>
 #include<string.h>
 #define MAX 1000
-char buffer[MAX][MAX],string[MAX],statenum,sbuff[MAX][MAX],newclasses[MAX][MAX],KA[1000],A[1000],noreach[1000],appendednum[MAX],notreachable[MAX];
-int buffindex=0,DFSM=1,position=-1,found,sindex=0,scount=0,subcount=0,alphalength,marked[MAX] = {0};
+char buffer[MAX][MAX][MAX],string[MAX],statenum,sbuff[MAX][MAX],newclasses[MAX][MAX],KA[1000],A[1000],noreach[1000],appendednum[MAX],notreachable[MAX];
+int buffindex=0,DFSM=1,position=-1,found,sindex=0,scount=0,subcount=0,alphalength,marked[MAX] = {0},    fileIndex = 0,charIndex;
 
-
+/*
 //function to verify the alphabet is present and return the position for use of logic
 int Verify_and_store_alphabet_position(const char *buffer, char target)
 {
@@ -145,6 +145,30 @@ int checkgroup(int character) {
 }
 
 
+*/
+
+
+int stringcount(int A)
+{
+    int x=0;
+    for (int j = 0; j < MAX && buffer[A][j][0] != '\0'; j++) 
+    {
+    x++;
+    }
+    return x;
+}
+
+void printcontent(char buffer[][MAX][MAX],int buffindex,int A)
+{
+    for (int i = A; i < buffindex; i++) {
+        printf("buffer[%d]:",i);
+        for (int j = 0; j < MAX && buffer[i][j][0] != '\0'; j++) {
+            printf("%s ", buffer[i][j]);
+        }
+        printf("\n");
+    }
+}
+
 //main function
 int main(int argc, char *argv[])
 {
@@ -167,49 +191,58 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    //Read lines and store non-empty lines (excluding lines with only spaces)
-    while (fgets(buffer[buffindex], MAX, file1)) {
-        int length = strlen(buffer[buffindex]);
+    
 
-        // Remove spaces from the line and store only non-space characters
-        int newLength = 0;
-        for (int i = 0; i < length; i++) {
-            if (buffer[buffindex][i] != ' ' && buffer[buffindex][i] != '\n') {
-                buffer[buffindex][newLength] = buffer[buffindex][i];
-                newLength++;
+    
+    char line[MAX * MAX]; // Buffer to hold each line of text, assuming each token can be up to MAX characters
+
+    // Read lines and store each token as a string in the buffer
+    while (fgets(line, sizeof(line), file1)) {
+        // Check if the line is not just a newline or space
+        if (strspn(line, " \t\r\n") != strlen(line)) {
+            char *token = strtok(line, " \t\n");
+            int tokenIndex = 0;
+            while (token != NULL && tokenIndex < MAX) {
+                strncpy(buffer[buffindex][tokenIndex], token, MAX);
+                buffer[buffindex][tokenIndex][MAX - 1] = '\0'; // Ensure null-termination
+                tokenIndex++;
+                token = strtok(NULL, " \t\n");
+            }
+            if (tokenIndex > 0) { // If at least one token was found
+                buffindex++;
             }
         }
-        buffer[buffindex][newLength] = '\0'; // Null-terminate the modified line
 
-        if (newLength > 0) {
-            buffindex++;
+        if (buffindex >= MAX) {
+            // Handle the case where the maximum number of lines has been reached
+            break;
         }
     }
-    
+
     //Closing file 1
     fclose(file1);
 
     //printing the buffer index
-    //printf("bufferindex:%d\n\n",buffindex);
+    printf("bufferindex:%d\n\n",buffindex);
 
-
-    //printing the stored non-empty lines
-    /*for (int i = 0; i < buffindex; i++) {
-       printf("buffer[%d]: %s\n", i, buffer[i]);
-    }*/
-
+    //Print the contents of the buffer
+    printcontent(buffer,buffindex,0);
+    
     //aphalet Length defining
-    int alphalength=strlen(buffer[0]);
-    //printf("alphalength:%d\n\n",alphalength);
+    alphalength=stringcount(0);
+    printf("\nalphalength:%d\n",stringcount(0));
 
 
     //accessing the buffer
-    //printf("\nseparate :%c\n",buffer[2][0]);
+    printf("\nAccess buffer[12][0] :%s\n",buffer[12][0]);
 
     
-    int finalstatelength= strlen(buffer[buffindex-1]);
+    int finalstatelength= stringcount(buffindex-1);
     //debug
-    //printf("final state: %s\t FSlength :%d FSarrayIndex:%d\n ",buffer[buffindex-1],finalstatelength,buffindex-1);
+    printf("\nFSlength :%d FSarrayIndex:%d\nfinal states: \n",finalstatelength,buffindex-1);
+    printcontent(buffer,buffindex,buffindex-1);
+
+
 
     //Opening the second text file string.txt for reading
     FILE *file2 = fopen(argv[2], "r");
@@ -238,10 +271,11 @@ int main(int argc, char *argv[])
         }
     }
 
-    /*for(int i = 0; i < sindex; i++) {
+    printf("\n");
+    for(int i = 0; i < sindex; i++) {
        printf("sbuff[%d]: %s\n", i, sbuff[i]);
-    }*/
-    //printf("Sindex=%d \n\n",sindex);
+    }
+    printf("\nSindex=%d \n\n",sindex);
 
 
     // Close the first text file
@@ -252,20 +286,23 @@ int main(int argc, char *argv[])
     int V=0;
     for(int j=1;j<buffindex-1;j++)
     {
-        if(strlen(buffer[j])==alphalength)
+        if(stringcount(j)==alphalength)
         {
-            //printf("buffer[%d]:%ld=alphalength:%d\n",j,strlen(buffer[j]),alphalength);
+            //printf("buffer[%d]:%d=alphalength:%d\n",j,stringcount(j),alphalength);
             V=0;
         }
         else{
             printf("transition is not valid \n");
+             printf("buffer length of buffer[%d]:%d!=alphalength:%d\n",j,stringcount(j),alphalength);
 	    printf("NO\n\n");
             V=1;
             exit(0); //can use exit(1);
         }
     }
+
+
 	
-    //printf("V=%d\n",V); //V is a flag to indicate that the given transition is invalid	
+    printf("V=%d\n",V); //V is a flag to indicate that the given transition is invalid	
 
 
 
@@ -283,40 +320,46 @@ int main(int argc, char *argv[])
 	{
 
         //check if all the transitions are valid transition
-    for(int i=1;i<buffindex-1;i++)
-    {
-        for(int j=0;j<alphalength;j++)
-        {
-            if (buffer[i][j] >= '0' + buffindex-1)
-            {
-                printf("error %c is not a valid state transition DFSM is invalid",buffer[i][j]);
+    // Check if all the transitions are valid transitions
+    for (int i = 1; i < buffindex - 1; i++) {
+        for (int j = 0; j < alphalength; j++) {
+            // Convert the string at buffer[i][j] to an integer
+            int state = atoi(buffer[i][j]);
+            // Check if the state is within the valid range
+            if (state >= buffindex - 1) {
+                printf("error %s is not a valid state transition; DFSM is invalid\n", buffer[i][j]);
                 exit(0);
             }
         }
     }
 
-    //check if all the list of string alphabets in given alphabet list 
-    for(int i=0;i<sindex;i++)
-    {
-        for(int j=0;j<strlen(sbuff[i]);j++)
-        {
-            if(strchr(buffer[0],sbuff[i][j]))
-            {
-                
-            }
-            else
-            {
-                printf("\nstring[%d][%d]:%c is not in alphabet list\n",i,j,sbuff[i][j]);
+
+
+    // Check if all the characters of strings in sbuff are in the given alphabet list
+    char alphabetList[MAX] = {0};
+    for (int i = 0; buffer[0][i][0] != '\0' && i < MAX; i++) {
+        strcat(alphabetList, buffer[0][i]);
+    }
+    
+    // Check if all the characters of strings in sbuff are in the given alphabet list
+    for (int i = 0; i < sindex; i++) {
+        for (int j = 0; j < strlen(sbuff[i]); j++) {
+            if (strchr(alphabetList, sbuff[i][j]) == NULL) {
+                // If the character is not found in the alphabet list
+                printf("\nstring[%d][%d]:%c is not in alphabet list\n", i, j, sbuff[i][j]);
                 exit(0);
             }
         }
-
     }
+
+
+
+
 
     //check if given final states are valid for given DFSM
-    for(int i=0;i<strlen(buffer[buffindex-1]);i++)
+    for(int i=0;i<stringcount(buffindex-1);i++)
     {
-        if(buffer[buffindex-1][i] > '0'+buffindex-2 && buffer[buffindex-1][i]!='0')
+        if(atoi(buffer[buffindex-1][i]) > buffindex-2)
         {
             printf("DFSM invalid\n");
             exit(0);
@@ -325,13 +368,13 @@ int main(int argc, char *argv[])
     }
 
 
-
+/*
     //<<<<<<<<<<<<<<<<<<<<<<<<<<<<Actual logic >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-    //removing not reachable states from sate 2 to last state
+    //removing not reachable states from state 2 to last state
 
 
-    //Doing DFS from state 1 and removing not reachable states from sate 2 to last state
+    //Doing DFS from state 1 and removing not reachable states from state 2 to last state
     mark_state_which_are_reachable(1, marked, buffindex-2,alphalength);  // Since you mentioned transition[1] is initial state and your indexing is 1-based.
 
     // Printing the unreachable states
@@ -344,11 +387,11 @@ int main(int argc, char *argv[])
 
     //debug norech
     //printf("Unreachable states: ");
-    /*for(int i=0;i<strlen(noreach);i++)
+    for(int i=0;i<strlen(noreach);i++)
     {
         printf(" %c",noreach[i]);
     }
-    printf("\n");*/
+    printf("\n");
 
     
 
@@ -511,7 +554,11 @@ int main(int argc, char *argv[])
 
     }
 
-//end of first else 
-	}
+    //end of first else 
+	} 
+*/
 	return 0;
+
+    }
+}
 }
