@@ -7,14 +7,50 @@ Description: The following code is logic for implementing the Minimization of DF
 */
 
 
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
 #include <stdbool.h>
 #define MAX 1000
-char buffer[MAX][MAX][MAX],string[MAX],statenum,sbuff[MAX][MAX],newclasses[MAX][MAX],notreachable[MAX];
+char buffer[MAX][MAX][MAX],string[MAX],statenum[MAX],sbuff[MAX][MAX],newclasses[MAX][MAX],notreachable[MAX];
 int buffindex=0,DFSM=1,position=-1,found,sindex=0,scount=0,subcount=0,appended_count=0,alphalength,marked[MAX] = {0},appendednum[MAX],size=0,    fileIndex = 0,charIndex,noreach[1000],KA[1000],A[1000],A_count = 0,KA_count = 0;
 
+
+//function to verify the alphabet is present and return the position for use of logic
+int Verify_and_store_alphabet_position(char target) {
+    //printf("target=%c\n",target);
+    for (int i = 0; i < MAX && buffer[0][i][0] != '\0'; i++) {
+        if (buffer[0][i][0] == target) { // Check the first character of each string in buffer[0][i]
+            return i;
+        }
+    }
+    return -1; // Return -1 if the character is not found
+}
+
+
+//check if the string belongs to which equivalence_state
+int belongs_to_which_equivalence_state(const char *string)
+{
+    int DFSM=1;
+
+    int length=strlen(string);
+    //printf("string length@belongs :%d\n",length);
+    for(int i=0;i<length;i++)
+    {
+        int position =Verify_and_store_alphabet_position(string[i]);
+        //printf("position of '%c' is %d\n",string[i],position);
+        // Copy the string from buffer to statenum
+        strncpy(statenum, buffer[DFSM][position], MAX-1);
+        statenum[MAX-1] = '\0'; // Ensure null termination
+
+        //coverting character to integer and intialize to DFSM
+        DFSM=atoi(statenum);
+        statenum[0]='\0';
+    }
+    return DFSM;
+
+}
 
 int stringcount(int A)
 {
@@ -106,6 +142,24 @@ int findNonFinalReachableStates(int numStates, int noreach[], int nonReachableCo
     return KA_count;
 }
 
+void savegroup(const char *string, char groupnum)
+{
+    char filename[1000]; // Adjust the size according to your needs
+    sprintf(filename, "group_%d.txt", groupnum);
+    printf("Saving to file: %s\n\n", filename); // Debug print
+
+    FILE *file = fopen(filename, "a");
+    if (file == NULL) {
+        perror("Error opening file"); // More detailed error
+        return;
+    }
+
+    int result = fprintf(file, "%s\n", string);
+    if (result < 0) {
+        perror("Error writing to file"); // Check for writing errors
+    }
+    fclose(file);
+}
 
 
 // Function to find if an integer is present in an array
@@ -129,7 +183,17 @@ void append_character(char newclasses[], char ch) {
     newclasses[len + 1] = '\0';
 }
 
-
+int find_character_present_in_array(const char *array, char target) {
+    while (*array != '\0') {
+        if (*array == target) {
+            // Character found in the array
+            return 1; 
+        }
+        array++;
+    }
+    
+    return 0; // Character not found in the array
+}
 
 
 
@@ -139,7 +203,19 @@ void append_integer(int array[], int *size, int value) {
     (*size)++; // Increase the size of the array
 }
 
+int checkgroup(int T) {
 
+    char H=T+'0';
+    for(int i=0;i<scount;i++)
+    {
+        if(find_character_present_in_array(newclasses[i],H)==1)
+        {
+            return i;
+            break;
+        }
+    }
+    
+}
 
 
 
@@ -546,11 +622,22 @@ printf("\n");
     for (int i = 0; i < scount; i++) {
        printf("newclasses[%d]: %s\n", i+1, newclasses[i]);
     }
-    printf("Note: With respect to above state-numbers group numbers are given\n");
+    printf("Note: With respect to above state-numbers group numbers are given\n\n");
 
 
 
+    //check strings.txt and check each string belongs to which group
+    for(int i=0;i<sindex;i++)
+    {   
+        printf("@sbuff[%d]:\n",i);
+        int class_state=belongs_to_which_equivalence_state(sbuff[i]);
+        printf("belongs to state:%d\n",class_state);
+        int check=checkgroup(class_state);
+        printf("belongs to group:%d\n",check+1);
+        printf("%s belongs : %d , and final is %d state\n",sbuff[i], class_state,check+1);
+        savegroup(sbuff[i],check+1);
 
+    }
     
 
 
